@@ -135,7 +135,7 @@ export default function PdfCropPage() {
                     onChange={(e) =>
                       setCropInset({ ...cropInset, top: parseInt(e.target.value, 10) || 0 })
                     }
-                    className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-bold text-slate-900 focus:border-indigo-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
+                    className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-bold text-slate-900 focus:border-red-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
                   />
                 </div>
 
@@ -151,7 +151,7 @@ export default function PdfCropPage() {
                     onChange={(e) =>
                       setCropInset({ ...cropInset, bottom: parseInt(e.target.value, 10) || 0 })
                     }
-                    className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-bold text-slate-900 focus:border-indigo-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
+                    className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-bold text-slate-900 focus:border-red-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
                   />
                 </div>
 
@@ -167,7 +167,7 @@ export default function PdfCropPage() {
                     onChange={(e) =>
                       setCropInset({ ...cropInset, left: parseInt(e.target.value, 10) || 0 })
                     }
-                    className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-bold text-slate-900 focus:border-indigo-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
+                    className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-bold text-slate-900 focus:border-red-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
                   />
                 </div>
 
@@ -183,7 +183,7 @@ export default function PdfCropPage() {
                     onChange={(e) =>
                       setCropInset({ ...cropInset, right: parseInt(e.target.value, 10) || 0 })
                     }
-                    className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-bold text-slate-900 focus:border-indigo-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
+                    className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-bold text-slate-900 focus:border-red-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
                   />
                 </div>
               </div>
@@ -199,7 +199,7 @@ export default function PdfCropPage() {
                       type="radio"
                       checked={pageScope === "all"}
                       onChange={() => setPageScope("all")}
-                      className="text-indigo-600"
+                      className="text-red-600"
                     />
                     <span>All Pages</span>
                   </label>
@@ -208,7 +208,7 @@ export default function PdfCropPage() {
                       type="radio"
                       checked={pageScope === "custom"}
                       onChange={() => setPageScope("custom")}
-                      className="text-indigo-600"
+                      className="text-red-600"
                     />
                     <span>Specific Pages</span>
                   </label>
@@ -220,7 +220,7 @@ export default function PdfCropPage() {
                     value={customPages}
                     onChange={(e) => setCustomPages(e.target.value)}
                     placeholder="e.g. 1, 3, 5"
-                    className="mt-3 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-bold text-slate-900 focus:border-indigo-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
+                    className="mt-3 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-bold text-slate-900 focus:border-red-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
                   />
                 )}
               </div>
@@ -229,7 +229,7 @@ export default function PdfCropPage() {
                 type="button"
                 onClick={handleCrop}
                 disabled={isCropping}
-                className="mt-6 flex w-full items-center justify-center gap-2 rounded-2xl bg-indigo-600 py-3.5 text-sm font-bold text-white shadow-lg shadow-indigo-500/25 transition hover:bg-indigo-700 disabled:opacity-50"
+                className="mt-6 flex w-full items-center justify-center gap-2 rounded-2xl bg-red-600 py-3.5 text-sm font-bold text-white shadow-lg shadow-red-500/25 transition hover:bg-red-700 disabled:opacity-50"
               >
                 <Crop className="h-4 w-4" />
                 <span>{isCropping ? "Cropping..." : "Crop PDF Document"}</span>
@@ -257,7 +257,7 @@ export default function PdfCropPage() {
                 <button
                   type="button"
                   onClick={downloadCropped}
-                  className="flex flex-1 items-center justify-center gap-2 rounded-2xl bg-indigo-600 py-3.5 text-sm font-bold text-white shadow-md hover:bg-indigo-700"
+                  className="flex flex-1 items-center justify-center gap-2 rounded-2xl bg-red-600 py-3.5 text-sm font-bold text-white shadow-md hover:bg-red-700"
                 >
                   <Download className="h-4 w-4" />
                   <span>Download Cropped PDF</span>

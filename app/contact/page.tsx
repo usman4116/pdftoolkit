@@ -23,7 +23,7 @@ export default function ContactPage() {
       <AdSlot slotId="contact-top-banner" format="horizontal" />
 
       <div className="text-center">
-        <div className="inline-flex items-center gap-2 rounded-full bg-indigo-50 px-3 py-1 text-xs font-semibold text-indigo-700 dark:bg-indigo-950 dark:text-indigo-300">
+        <div className="inline-flex items-center gap-2 rounded-full bg-red-50 px-3 py-1 text-xs font-semibold text-red-700 dark:bg-red-950 dark:text-red-300">
           <Mail className="h-3.5 w-3.5" />
           <span>Get in Touch</span>
         </div>
@@ -46,15 +46,15 @@ export default function ContactPage() {
             </p>
             <div className="mt-4 space-y-2 text-xs">
               <div className="flex items-center gap-2 text-slate-700 dark:text-slate-300">
-                <HelpCircle className="h-4 w-4 text-indigo-600" />
+                <HelpCircle className="h-4 w-4 text-red-600" />
                 <span>Files are processed locally in your browser</span>
               </div>
               <div className="flex items-center gap-2 text-slate-700 dark:text-slate-300">
-                <HelpCircle className="h-4 w-4 text-indigo-600" />
+                <HelpCircle className="h-4 w-4 text-red-600" />
                 <span>No daily upload caps or limits</span>
               </div>
               <div className="flex items-center gap-2 text-slate-700 dark:text-slate-300">
-                <HelpCircle className="h-4 w-4 text-indigo-600" />
+                <HelpCircle className="h-4 w-4 text-red-600" />
                 <span>100% free with no registration</span>
               </div>
             </div>
@@ -65,7 +65,7 @@ export default function ContactPage() {
               Direct Contact
             </h3>
             <p className="mt-2 text-xs text-slate-500">
-              Email support: <a href="mailto:support@theaethersync.com" className="font-semibold text-indigo-600 hover:underline">support@theaethersync.com</a>
+              Email support: <a href="mailto:support@theaethersync.com" className="font-semibold text-red-600 hover:underline">support@theaethersync.com</a>
             </p>
             <p className="mt-1 text-xs text-slate-500">
               Response time: Within 24–48 business hours.
@@ -92,7 +92,7 @@ export default function ContactPage() {
                     setSubmitted(false);
                     setFormData({ name: "", email: "", subject: "Feedback", message: "" });
                   }}
-                  className="mt-6 rounded-xl bg-indigo-600 px-4 py-2 text-xs font-bold text-white hover:bg-indigo-700"
+                  className="mt-6 rounded-xl bg-red-600 px-4 py-2 text-xs font-bold text-white hover:bg-red-700"
                 >
                   Send Another Message
                 </button>
@@ -110,7 +110,7 @@ export default function ContactPage() {
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       placeholder="Jane Doe"
-                      className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-medium text-slate-900 focus:border-indigo-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
+                      className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-medium text-slate-900 focus:border-red-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
                     />
                   </div>
                   <div>
@@ -123,7 +123,7 @@ export default function ContactPage() {
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       placeholder="jane@example.com"
-                      className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-medium text-slate-900 focus:border-indigo-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
+                      className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-medium text-slate-900 focus:border-red-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
                     />
                   </div>
                 </div>
@@ -135,7 +135,7 @@ export default function ContactPage() {
                   <select
                     value={formData.subject}
                     onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                    className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-bold text-slate-900 focus:border-indigo-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
+                    className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-bold text-slate-900 focus:border-red-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
                   >
                     <option value="Feedback">General Feedback</option>
                     <option value="Bug">Report a Bug / File Issue</option>
@@ -154,13 +154,13 @@ export default function ContactPage() {
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     placeholder="Tell us what's on your mind..."
-                    className="mt-1.5 w-full resize-none rounded-xl border border-slate-300 bg-white p-3 text-xs font-medium text-slate-900 focus:border-indigo-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
+                    className="mt-1.5 w-full resize-none rounded-xl border border-slate-300 bg-white p-3 text-xs font-medium text-slate-900 focus:border-red-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="flex w-full items-center justify-center gap-2 rounded-2xl bg-indigo-600 py-3.5 text-xs font-bold text-white shadow-md shadow-indigo-500/25 hover:bg-indigo-700"
+                  className="flex w-full items-center justify-center gap-2 rounded-2xl bg-red-600 py-3.5 text-xs font-bold text-white shadow-md shadow-red-500/25 hover:bg-red-700"
                 >
                   <Send className="h-4 w-4" />
                   <span>Send Message</span>

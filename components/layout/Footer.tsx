@@ -9,7 +9,7 @@ export function Footer() {
       <div className="border-b border-slate-200/80 bg-white/50 px-4 py-8 dark:border-slate-800/80 dark:bg-slate-900/40">
         <div className="mx-auto grid max-w-7xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 dark:bg-indigo-950 dark:text-indigo-400">
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-red-50 text-red-600 dark:bg-red-950 dark:text-red-400">
               <ShieldCheck className="h-5 w-5" />
             </div>
             <div>
@@ -36,7 +36,7 @@ export function Footer() {
             </div>
           </div>
           <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-violet-50 text-violet-600 dark:bg-violet-950 dark:text-violet-400">
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-rose-50 text-rose-600 dark:bg-rose-950 dark:text-rose-400">
               <Cpu className="h-5 w-5" />
             </div>
             <div>
@@ -71,11 +71,11 @@ export function Footer() {
               Popular Tools
             </h3>
             <ul className="mt-4 space-y-2 text-xs">
-              <li><Link href="/pdf-compressor" className="text-slate-600 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400">PDF Compressor</Link></li>
-              <li><Link href="/pdf-editor" className="text-slate-600 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400">PDF Editor</Link></li>
-              <li><Link href="/pdf-ocr" className="text-slate-600 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400">PDF OCR</Link></li>
-              <li><Link href="/pdf-merge" className="text-slate-600 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400">Merge PDF</Link></li>
-              <li><Link href="/pdf-split" className="text-slate-600 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400">Split PDF</Link></li>
+              <li><Link href="/pdf-compressor" className="text-slate-600 hover:text-red-600 dark:text-slate-400 dark:hover:text-red-400">PDF Compressor</Link></li>
+              <li><Link href="/pdf-editor" className="text-slate-600 hover:text-red-600 dark:text-slate-400 dark:hover:text-red-400">PDF Editor</Link></li>
+              <li><Link href="/pdf-ocr" className="text-slate-600 hover:text-red-600 dark:text-slate-400 dark:hover:text-red-400">PDF OCR</Link></li>
+              <li><Link href="/pdf-merge" className="text-slate-600 hover:text-red-600 dark:text-slate-400 dark:hover:text-red-400">Merge PDF</Link></li>
+              <li><Link href="/pdf-split" className="text-slate-600 hover:text-red-600 dark:text-slate-400 dark:hover:text-red-400">Split PDF</Link></li>
             </ul>
           </div>
 
@@ -85,11 +85,11 @@ export function Footer() {
               Conversions
             </h3>
             <ul className="mt-4 space-y-2 text-xs">
-              <li><Link href="/pdf-to-word" className="text-slate-600 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400">PDF to Word</Link></li>
-              <li><Link href="/word-to-pdf" className="text-slate-600 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400">Word to PDF</Link></li>
-              <li><Link href="/pdf-to-jpg" className="text-slate-600 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400">PDF to JPG</Link></li>
-              <li><Link href="/jpg-to-pdf" className="text-slate-600 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400">JPG to PDF</Link></li>
-              <li><Link href="/pdf-converter" className="text-slate-600 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400">Converter Hub</Link></li>
+              <li><Link href="/pdf-to-word" className="text-slate-600 hover:text-red-600 dark:text-slate-400 dark:hover:text-red-400">PDF to Word</Link></li>
+              <li><Link href="/word-to-pdf" className="text-slate-600 hover:text-red-600 dark:text-slate-400 dark:hover:text-red-400">Word to PDF</Link></li>
+              <li><Link href="/pdf-to-jpg" className="text-slate-600 hover:text-red-600 dark:text-slate-400 dark:hover:text-red-400">PDF to JPG</Link></li>
+              <li><Link href="/jpg-to-pdf" className="text-slate-600 hover:text-red-600 dark:text-slate-400 dark:hover:text-red-400">JPG to PDF</Link></li>
+              <li><Link href="/pdf-converter" className="text-slate-600 hover:text-red-600 dark:text-slate-400 dark:hover:text-red-400">Converter Hub</Link></li>
             </ul>
           </div>
 
@@ -99,14 +99,14 @@ export function Footer() {
               Manage & Security
             </h3>
             <ul className="mt-4 space-y-2 text-xs">
-              <li><Link href="/pdf-pages" className="text-slate-600 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400">Organize Pages</Link></li>
-              <li><Link href="/pdf-rotate" className="text-slate-600 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400">Rotate PDF</Link></li>
-              <li><Link href="/pdf-watermark" className="text-slate-600 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400">Watermark PDF</Link></li>
-              <li><Link href="/pdf-sign" className="text-slate-600 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400">Sign PDF</Link></li>
-              <li><Link href="/pdf-protect" className="text-slate-600 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400">Protect PDF</Link></li>
-              <li><Link href="/pdf-unlock" className="text-slate-600 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400">Unlock PDF</Link></li>
-              <li><Link href="/pdf-repair" className="text-slate-600 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400">Repair PDF</Link></li>
-              <li><Link href="/pdf-crop" className="text-slate-600 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400">Crop PDF</Link></li>
+              <li><Link href="/pdf-pages" className="text-slate-600 hover:text-red-600 dark:text-slate-400 dark:hover:text-red-400">Organize Pages</Link></li>
+              <li><Link href="/pdf-rotate" className="text-slate-600 hover:text-red-600 dark:text-slate-400 dark:hover:text-red-400">Rotate PDF</Link></li>
+              <li><Link href="/pdf-watermark" className="text-slate-600 hover:text-red-600 dark:text-slate-400 dark:hover:text-red-400">Watermark PDF</Link></li>
+              <li><Link href="/pdf-sign" className="text-slate-600 hover:text-red-600 dark:text-slate-400 dark:hover:text-red-400">Sign PDF</Link></li>
+              <li><Link href="/pdf-protect" className="text-slate-600 hover:text-red-600 dark:text-slate-400 dark:hover:text-red-400">Protect PDF</Link></li>
+              <li><Link href="/pdf-unlock" className="text-slate-600 hover:text-red-600 dark:text-slate-400 dark:hover:text-red-400">Unlock PDF</Link></li>
+              <li><Link href="/pdf-repair" className="text-slate-600 hover:text-red-600 dark:text-slate-400 dark:hover:text-red-400">Repair PDF</Link></li>
+              <li><Link href="/pdf-crop" className="text-slate-600 hover:text-red-600 dark:text-slate-400 dark:hover:text-red-400">Crop PDF</Link></li>
             </ul>
           </div>
 
@@ -116,11 +116,11 @@ export function Footer() {
               Company & Legal
             </h3>
             <ul className="mt-4 space-y-2 text-xs">
-              <li><Link href="/about" className="text-slate-600 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400">About PDFToolkit</Link></li>
-              <li><Link href="/contact" className="text-slate-600 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400">Contact & Support</Link></li>
-              <li><Link href="/privacy-policy" className="text-slate-600 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400">Privacy Policy</Link></li>
-              <li><Link href="/terms" className="text-slate-600 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400">Terms of Service</Link></li>
-              <li><Link href="/blog" className="text-slate-600 hover:text-indigo-600 dark:text-slate-400 dark:hover:text-indigo-400">Guides & Articles</Link></li>
+              <li><Link href="/about" className="text-slate-600 hover:text-red-600 dark:text-slate-400 dark:hover:text-red-400">About PDFToolkit</Link></li>
+              <li><Link href="/contact" className="text-slate-600 hover:text-red-600 dark:text-slate-400 dark:hover:text-red-400">Contact & Support</Link></li>
+              <li><Link href="/privacy-policy" className="text-slate-600 hover:text-red-600 dark:text-slate-400 dark:hover:text-red-400">Privacy Policy</Link></li>
+              <li><Link href="/terms" className="text-slate-600 hover:text-red-600 dark:text-slate-400 dark:hover:text-red-400">Terms of Service</Link></li>
+              <li><Link href="/blog" className="text-slate-600 hover:text-red-600 dark:text-slate-400 dark:hover:text-red-400">Guides & Articles</Link></li>
             </ul>
           </div>
         </div>

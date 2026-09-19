@@ -52,7 +52,7 @@ export default function PrivacyPolicyPage() {
 
         <section className="rounded-3xl border border-slate-200 bg-white p-6 shadow-xs dark:border-slate-800 dark:bg-slate-900 sm:p-8">
           <div className="flex items-center gap-2 text-base font-bold text-slate-900 dark:text-white">
-            <EyeOff className="h-5 w-5 text-indigo-600" />
+            <EyeOff className="h-5 w-5 text-red-600" />
             <h2>2. Information We Do NOT Collect</h2>
           </div>
           <p className="mt-3">
@@ -86,7 +86,7 @@ export default function PrivacyPolicyPage() {
                 href="https://www.google.com/settings/ads"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-semibold text-indigo-600 underline"
+                className="font-semibold text-red-600 underline"
               >
                 Google Ads Settings
               </a>.
@@ -109,7 +109,7 @@ export default function PrivacyPolicyPage() {
           </h2>
           <p className="mt-3">
             If you have questions about this privacy statement, please contact us at:{" "}
-            <a href="mailto:privacy@theaethersync.com" className="font-semibold text-indigo-600 underline">
+            <a href="mailto:privacy@theaethersync.com" className="font-semibold text-red-600 underline">
               privacy@theaethersync.com
             </a>.
           </p>

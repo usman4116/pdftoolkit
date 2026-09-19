@@ -135,7 +135,7 @@ export default function PdfToJpgPage() {
                 <select
                   value={format}
                   onChange={(e) => setFormat(e.target.value as any)}
-                  className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-bold text-slate-900 focus:border-indigo-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
+                  className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-bold text-slate-900 focus:border-red-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
                 >
                   <option value="image/jpeg">JPG (Standard Photo Format)</option>
                   <option value="image/png">PNG (Lossless Graphics)</option>
@@ -149,7 +149,7 @@ export default function PdfToJpgPage() {
                 <select
                   value={dpi}
                   onChange={(e) => setDpi(parseInt(e.target.value, 10))}
-                  className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-bold text-slate-900 focus:border-indigo-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
+                  className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-bold text-slate-900 focus:border-red-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
                 >
                   <option value="150">150 DPI (Balanced Web Quality)</option>
                   <option value="300">300 DPI (High Resolution Print)</option>
@@ -161,7 +161,7 @@ export default function PdfToJpgPage() {
               type="button"
               onClick={handleConvert}
               disabled={isProcessing}
-              className="mt-6 flex w-full items-center justify-center gap-2 rounded-2xl bg-indigo-600 py-3.5 text-sm font-bold text-white shadow-lg shadow-indigo-500/25 transition hover:bg-indigo-700 disabled:opacity-50"
+              className="mt-6 flex w-full items-center justify-center gap-2 rounded-2xl bg-red-600 py-3.5 text-sm font-bold text-white shadow-lg shadow-red-500/25 transition hover:bg-red-700 disabled:opacity-50"
             >
               <Sparkles className="h-4 w-4" />
               <span>{isProcessing ? "Converting Pages..." : "Convert to Images"}</span>
@@ -189,7 +189,7 @@ export default function PdfToJpgPage() {
                 <button
                   type="button"
                   onClick={downloadZip}
-                  className="flex items-center gap-2 rounded-xl bg-indigo-600 px-4 py-2.5 text-xs font-bold text-white shadow-md hover:bg-indigo-700"
+                  className="flex items-center gap-2 rounded-xl bg-red-600 px-4 py-2.5 text-xs font-bold text-white shadow-md hover:bg-red-700"
                 >
                   <Archive className="h-4 w-4" />
                   <span>Download All (ZIP)</span>
@@ -224,7 +224,7 @@ export default function PdfToJpgPage() {
                     <button
                       type="button"
                       onClick={() => downloadSingle(img)}
-                      className="rounded-lg p-1 text-indigo-600 hover:bg-indigo-50 dark:text-indigo-400 dark:hover:bg-indigo-950/60"
+                      className="rounded-lg p-1 text-red-600 hover:bg-red-50 dark:text-red-400 dark:hover:bg-red-950/60"
                       title="Download image"
                     >
                       <Download className="h-4 w-4" />

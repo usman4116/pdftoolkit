@@ -100,7 +100,7 @@ export default function PdfConverterHubPage() {
 
       {/* Header */}
       <div className="text-center">
-        <div className="inline-flex items-center gap-2 rounded-full bg-purple-50 px-3 py-1 text-xs font-semibold text-purple-700 dark:bg-purple-950 dark:text-purple-300">
+        <div className="inline-flex items-center gap-2 rounded-full bg-rose-50 px-3 py-1 text-xs font-semibold text-rose-700 dark:bg-rose-950 dark:text-rose-300">
           <ArrowLeftRight className="h-3.5 w-3.5" />
           <span>All-In-One Document Hub</span>
         </div>
@@ -118,21 +118,21 @@ export default function PdfConverterHubPage() {
           <Link
             key={pair.href}
             href={pair.href}
-            className="group relative flex flex-col justify-between rounded-3xl border border-slate-200 bg-white p-6 shadow-xs transition-all duration-200 hover:-translate-y-1 hover:border-indigo-400 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900"
+            className="group relative flex flex-col justify-between rounded-3xl border border-slate-200 bg-white p-6 shadow-xs transition-all duration-200 hover:-translate-y-1 hover:border-red-400 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900"
           >
             <div>
               <div className="flex items-center justify-between">
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 transition-colors group-hover:bg-indigo-50 dark:bg-slate-800 dark:group-hover:bg-indigo-950/60">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-slate-100 transition-colors group-hover:bg-red-50 dark:bg-slate-800 dark:group-hover:bg-red-950/60">
                   {pair.icon}
                 </div>
                 <div className="flex items-center gap-1.5 rounded-full bg-slate-100 px-3 py-1 text-[11px] font-bold text-slate-700 dark:bg-slate-800 dark:text-slate-300">
                   <span>{pair.from}</span>
                   <ArrowRight className="h-3 w-3 text-slate-400" />
-                  <span className="text-indigo-600 dark:text-indigo-400">{pair.to}</span>
+                  <span className="text-red-600 dark:text-red-400">{pair.to}</span>
                 </div>
               </div>
 
-              <h3 className="mt-5 text-base font-bold text-slate-900 group-hover:text-indigo-600 dark:text-white dark:group-hover:text-indigo-400">
+              <h3 className="mt-5 text-base font-bold text-slate-900 group-hover:text-red-600 dark:text-white dark:group-hover:text-red-400">
                 {pair.title}
               </h3>
               <p className="mt-2 text-xs leading-relaxed text-slate-500 dark:text-slate-400">
@@ -140,7 +140,7 @@ export default function PdfConverterHubPage() {
               </p>
             </div>
 
-            <div className="mt-6 flex items-center gap-1 text-xs font-semibold text-indigo-600 dark:text-indigo-400">
+            <div className="mt-6 flex items-center gap-1 text-xs font-semibold text-red-600 dark:text-red-400">
               <span>Start Conversion</span>
               <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
             </div>

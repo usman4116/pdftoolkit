@@ -173,7 +173,7 @@ export default function PdfOcrPage() {
           {file && !ocrResult && (
             <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900">
               <div className="flex items-center gap-2 border-b border-slate-100 pb-3 dark:border-slate-800">
-                <Languages className="h-4 w-4 text-indigo-600" />
+                <Languages className="h-4 w-4 text-red-600" />
                 <h3 className="text-sm font-bold text-slate-900 dark:text-white">
                   Recognition Language
                 </h3>
@@ -186,7 +186,7 @@ export default function PdfOcrPage() {
                 <select
                   value={language}
                   onChange={(e) => setLanguage(e.target.value)}
-                  className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-xs font-bold text-slate-900 focus:border-indigo-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
+                  className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-xs font-bold text-slate-900 focus:border-red-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
                 >
                   {SUPPORTED_OCR_LANGUAGES.map((lang) => (
                     <option key={lang.code} value={lang.code}>
@@ -200,7 +200,7 @@ export default function PdfOcrPage() {
                 type="button"
                 onClick={handleStartOcr}
                 disabled={isProcessing}
-                className="mt-6 flex w-full items-center justify-center gap-2 rounded-2xl bg-indigo-600 py-3.5 text-sm font-bold text-white shadow-lg shadow-indigo-500/25 transition hover:bg-indigo-700 disabled:opacity-50"
+                className="mt-6 flex w-full items-center justify-center gap-2 rounded-2xl bg-red-600 py-3.5 text-sm font-bold text-white shadow-lg shadow-red-500/25 transition hover:bg-red-700 disabled:opacity-50"
               >
                 <Sparkles className="h-4 w-4" />
                 <span>{isProcessing ? "Recognizing Text..." : "Run OCR"}</span>
@@ -221,7 +221,7 @@ export default function PdfOcrPage() {
                 <button
                   type="button"
                   onClick={downloadSearchablePdf}
-                  className="flex items-center justify-center gap-2 rounded-xl bg-indigo-600 px-4 py-2.5 text-xs font-bold text-white shadow-sm hover:bg-indigo-700"
+                  className="flex items-center justify-center gap-2 rounded-xl bg-red-600 px-4 py-2.5 text-xs font-bold text-white shadow-sm hover:bg-red-700"
                 >
                   <FileSearch className="h-4 w-4" />
                   <span>Create Searchable PDF</span>
@@ -269,7 +269,7 @@ export default function PdfOcrPage() {
                 <button
                   type="button"
                   onClick={copyToClipboard}
-                  className="inline-flex items-center gap-1 text-xs font-semibold text-indigo-600 hover:underline dark:text-indigo-400"
+                  className="inline-flex items-center gap-1 text-xs font-semibold text-red-600 hover:underline dark:text-red-400"
                 >
                   {copied ? <Check className="h-3.5 w-3.5 text-emerald-600" /> : <Copy className="h-3.5 w-3.5" />}
                   <span>{copied ? "Copied to clipboard!" : "Copy Text"}</span>
@@ -281,7 +281,7 @@ export default function PdfOcrPage() {
               value={editableText}
               onChange={(e) => setEditableText(e.target.value)}
               placeholder="Extracted text will appear here. You can inspect, edit, or copy text directly..."
-              className="mt-4 min-h-[380px] flex-1 resize-y rounded-2xl border border-slate-100 bg-slate-50/50 p-4 font-mono text-xs leading-relaxed text-slate-800 focus:border-indigo-600 focus:outline-none dark:border-slate-800 dark:bg-slate-800/40 dark:text-slate-200"
+              className="mt-4 min-h-[380px] flex-1 resize-y rounded-2xl border border-slate-100 bg-slate-50/50 p-4 font-mono text-xs leading-relaxed text-slate-800 focus:border-red-600 focus:outline-none dark:border-slate-800 dark:bg-slate-800/40 dark:text-slate-200"
             />
           </div>
         </div>

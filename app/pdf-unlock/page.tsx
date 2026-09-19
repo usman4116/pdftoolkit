@@ -126,7 +126,7 @@ export default function PdfUnlockPage() {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder="Enter document password (if required)..."
-                  className="w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-bold text-slate-900 focus:border-indigo-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
+                  className="w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-bold text-slate-900 focus:border-red-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
                 />
               </div>
 
@@ -149,7 +149,7 @@ export default function PdfUnlockPage() {
                 type="button"
                 onClick={handleUnlock}
                 disabled={isUnlocking}
-                className="mt-6 flex w-full items-center justify-center gap-2 rounded-2xl bg-indigo-600 py-3.5 text-sm font-bold text-white shadow-lg shadow-indigo-500/25 transition hover:bg-indigo-700 disabled:opacity-50"
+                className="mt-6 flex w-full items-center justify-center gap-2 rounded-2xl bg-red-600 py-3.5 text-sm font-bold text-white shadow-lg shadow-red-500/25 transition hover:bg-red-700 disabled:opacity-50"
               >
                 <Unlock className="h-4 w-4" />
                 <span>{isUnlocking ? "Unlocking..." : "Unlock Document"}</span>
@@ -177,7 +177,7 @@ export default function PdfUnlockPage() {
                 <button
                   type="button"
                   onClick={downloadUnlocked}
-                  className="flex flex-1 items-center justify-center gap-2 rounded-2xl bg-indigo-600 py-3.5 text-sm font-bold text-white shadow-md hover:bg-indigo-700"
+                  className="flex flex-1 items-center justify-center gap-2 rounded-2xl bg-red-600 py-3.5 text-sm font-bold text-white shadow-md hover:bg-red-700"
                 >
                   <Download className="h-4 w-4" />
                   <span>Download Unlocked PDF</span>

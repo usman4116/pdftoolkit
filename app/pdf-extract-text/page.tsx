@@ -124,7 +124,7 @@ export default function PdfExtractTextPage() {
                 type="button"
                 onClick={handleExtract}
                 disabled={isExtracting}
-                className="mt-6 flex w-full items-center justify-center gap-2 rounded-2xl bg-indigo-600 py-3.5 text-sm font-bold text-white shadow-lg shadow-indigo-500/25 transition hover:bg-indigo-700 disabled:opacity-50"
+                className="mt-6 flex w-full items-center justify-center gap-2 rounded-2xl bg-red-600 py-3.5 text-sm font-bold text-white shadow-lg shadow-red-500/25 transition hover:bg-red-700 disabled:opacity-50"
               >
                 <Sparkles className="h-4 w-4" />
                 <span>{isExtracting ? "Extracting..." : "Extract Text"}</span>
@@ -144,7 +144,7 @@ export default function PdfExtractTextPage() {
                 <button
                   type="button"
                   onClick={copyAll}
-                  className="inline-flex items-center gap-1 text-xs font-bold text-indigo-600 hover:underline dark:text-indigo-400"
+                  className="inline-flex items-center gap-1 text-xs font-bold text-red-600 hover:underline dark:text-red-400"
                 >
                   {copied ? <Check className="h-3.5 w-3.5 text-emerald-600" /> : <Copy className="h-3.5 w-3.5" />}
                   <span>{copied ? "Copied!" : "Copy Text"}</span>
@@ -161,7 +161,7 @@ export default function PdfExtractTextPage() {
                 <button
                   type="button"
                   onClick={downloadTxt}
-                  className="flex flex-1 items-center justify-center gap-2 rounded-2xl bg-indigo-600 py-3.5 text-sm font-bold text-white shadow-md hover:bg-indigo-700"
+                  className="flex flex-1 items-center justify-center gap-2 rounded-2xl bg-red-600 py-3.5 text-sm font-bold text-white shadow-md hover:bg-red-700"
                 >
                   <Download className="h-4 w-4" />
                   <span>Download Text (.txt)</span>

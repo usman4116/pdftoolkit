@@ -229,7 +229,7 @@ export function PdfPreview({
               onClick={() => setShowSidebar(!showSidebar)}
               className={`rounded-lg p-1.5 text-xs font-medium transition ${
                 showSidebar
-                  ? "bg-indigo-50 text-indigo-600 dark:bg-indigo-950 dark:text-indigo-400"
+                  ? "bg-red-50 text-red-600 dark:bg-red-950 dark:text-red-400"
                   : "text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800"
               }`}
               title="Toggle Thumbnails"
@@ -331,7 +331,7 @@ export function PdfPreview({
                 onClick={() => goToPage(t.pageNum)}
                 className={`relative w-full rounded-lg border-2 p-1 transition-all ${
                   t.pageNum === activePage
-                    ? "border-indigo-600 shadow-md ring-2 ring-indigo-500/20"
+                    ? "border-red-600 shadow-md ring-2 ring-red-500/20"
                     : "border-slate-200 opacity-75 hover:opacity-100 dark:border-slate-800"
                 }`}
               >
@@ -353,7 +353,7 @@ export function PdfPreview({
         <div className="relative flex flex-1 items-center justify-center overflow-auto p-4">
           {isLoading && (
             <div className="absolute inset-0 z-10 flex flex-col items-center justify-center bg-white/70 backdrop-blur-xs dark:bg-slate-950/70">
-              <Loader2 className="h-8 w-8 animate-spin text-indigo-600" />
+              <Loader2 className="h-8 w-8 animate-spin text-red-600" />
               <p className="mt-2 text-xs font-medium text-slate-600 dark:text-slate-300">
                 Rendering PDF page...
               </p>

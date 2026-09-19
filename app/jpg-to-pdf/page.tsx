@@ -139,7 +139,7 @@ export default function JpgToPdfPage() {
                   <select
                     value={pageSize}
                     onChange={(e) => setPageSize(e.target.value as any)}
-                    className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-bold text-slate-900 focus:border-indigo-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
+                    className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-bold text-slate-900 focus:border-red-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
                   >
                     <option value="a4">A4 (Standard Paper)</option>
                     <option value="letter">US Letter</option>
@@ -154,7 +154,7 @@ export default function JpgToPdfPage() {
                   <select
                     value={margin}
                     onChange={(e) => setMargin(parseInt(e.target.value, 10))}
-                    className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-bold text-slate-900 focus:border-indigo-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
+                    className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-bold text-slate-900 focus:border-red-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
                   >
                     <option value="0">No Margin (Full Bleed)</option>
                     <option value="20">Small (20 pt)</option>
@@ -211,7 +211,7 @@ export default function JpgToPdfPage() {
                 type="button"
                 onClick={handleCreatePdf}
                 disabled={isConverting}
-                className="mt-6 flex w-full items-center justify-center gap-2 rounded-2xl bg-indigo-600 py-3.5 text-sm font-bold text-white shadow-lg shadow-indigo-500/25 transition hover:bg-indigo-700 disabled:opacity-50"
+                className="mt-6 flex w-full items-center justify-center gap-2 rounded-2xl bg-red-600 py-3.5 text-sm font-bold text-white shadow-lg shadow-red-500/25 transition hover:bg-red-700 disabled:opacity-50"
               >
                 <Sparkles className="h-4 w-4" />
                 <span>{isConverting ? "Generating PDF..." : "Create PDF Document"}</span>
@@ -239,7 +239,7 @@ export default function JpgToPdfPage() {
                 <button
                   type="button"
                   onClick={downloadPdf}
-                  className="flex flex-1 items-center justify-center gap-2 rounded-2xl bg-indigo-600 py-3.5 text-sm font-bold text-white shadow-md hover:bg-indigo-700"
+                  className="flex flex-1 items-center justify-center gap-2 rounded-2xl bg-red-600 py-3.5 text-sm font-bold text-white shadow-md hover:bg-red-700"
                 >
                   <Download className="h-4 w-4" />
                   <span>Download Created PDF</span>

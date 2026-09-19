@@ -82,7 +82,7 @@ export function EditorToolbar({
               onClick={() => onSelectMode(t.mode)}
               className={`flex items-center gap-1.5 rounded-xl px-2.5 py-1.5 text-xs font-semibold transition ${
                 isActive
-                  ? "bg-indigo-600 text-white shadow-sm"
+                  ? "bg-red-600 text-white shadow-sm"
                   : "text-slate-700 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800"
               }`}
               title={t.label}
@@ -159,7 +159,7 @@ export function EditorToolbar({
           type="button"
           onClick={onExport}
           disabled={isExporting}
-          className="inline-flex items-center gap-1.5 rounded-xl bg-indigo-600 px-3.5 py-1.5 text-xs font-bold text-white shadow-md shadow-indigo-500/20 transition hover:bg-indigo-700 disabled:opacity-50"
+          className="inline-flex items-center gap-1.5 rounded-xl bg-red-600 px-3.5 py-1.5 text-xs font-bold text-white shadow-md shadow-red-500/20 transition hover:bg-red-700 disabled:opacity-50"
         >
           <Download className="h-3.5 w-3.5" />
           <span>{isExporting ? "Saving..." : "Export PDF"}</span>

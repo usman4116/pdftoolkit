@@ -48,7 +48,7 @@ export function TargetSizeInput({
   return (
     <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-800 dark:bg-slate-900">
       <div className="flex items-center gap-2 border-b border-slate-100 pb-4 dark:border-slate-800">
-        <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-indigo-50 text-indigo-600 dark:bg-indigo-950 dark:text-indigo-400">
+        <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-red-50 text-red-600 dark:bg-red-950 dark:text-red-400">
           <Sliders className="h-4 w-4" />
         </div>
         <div>
@@ -81,7 +81,7 @@ export function TargetSizeInput({
                   targetSizeValue: parseFloat(e.target.value) || 1,
                 })
               }
-              className="w-32 rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm font-bold text-slate-900 focus:border-indigo-600 focus:outline-none focus:ring-1 focus:ring-indigo-600 dark:border-slate-700 dark:bg-slate-800 dark:text-white"
+              className="w-32 rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm font-bold text-slate-900 focus:border-red-600 focus:outline-none focus:ring-1 focus:ring-red-600 dark:border-slate-700 dark:bg-slate-800 dark:text-white"
             />
             <select
               value={options.targetSizeUnit ?? "MB"}
@@ -92,7 +92,7 @@ export function TargetSizeInput({
                   targetSizeUnit: e.target.value as "MB" | "KB",
                 })
               }
-              className="rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm font-semibold text-slate-900 focus:border-indigo-600 focus:outline-none focus:ring-1 focus:ring-indigo-600 dark:border-slate-700 dark:bg-slate-800 dark:text-white"
+              className="rounded-xl border border-slate-300 bg-white px-3 py-2 text-sm font-semibold text-slate-900 focus:border-red-600 focus:outline-none focus:ring-1 focus:ring-red-600 dark:border-slate-700 dark:bg-slate-800 dark:text-white"
             >
               <option value="MB">MB</option>
               <option value="KB">KB</option>
@@ -116,7 +116,7 @@ export function TargetSizeInput({
                   onClick={() => handlePresetSelect(p)}
                   className={`inline-flex items-center gap-1.5 rounded-xl px-3 py-1.5 text-xs font-semibold transition-all ${
                     isSelected
-                      ? "bg-indigo-600 text-white shadow-sm"
+                      ? "bg-red-600 text-white shadow-sm"
                       : "border border-slate-200 bg-slate-50 text-slate-700 hover:bg-slate-100 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300 dark:hover:bg-slate-700"
                   }`}
                 >
@@ -134,7 +134,7 @@ export function TargetSizeInput({
                     p.value === options.targetSizeValue &&
                     p.unit === options.targetSizeUnit
                 )
-                  ? "bg-indigo-600 text-white shadow-sm"
+                  ? "bg-red-600 text-white shadow-sm"
                   : "border border-slate-200 bg-slate-50 text-slate-700 hover:bg-slate-100 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-300"
               }`}
             >
@@ -158,7 +158,7 @@ export function TargetSizeInput({
             onChange={(e) =>
               onChange({ ...options, quality: parseFloat(e.target.value) })
             }
-            className="mt-2 h-2 w-full cursor-pointer appearance-none rounded-lg bg-slate-200 accent-indigo-600 dark:bg-slate-700"
+            className="mt-2 h-2 w-full cursor-pointer appearance-none rounded-lg bg-slate-200 accent-red-600 dark:bg-slate-700"
           />
         </div>
 
@@ -172,7 +172,7 @@ export function TargetSizeInput({
             onChange={(e) =>
               onChange({ ...options, dpi: parseInt(e.target.value, 10) })
             }
-            className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-medium text-slate-900 focus:border-indigo-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
+            className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-medium text-slate-900 focus:border-red-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
           >
             <option value="72">72 DPI (Web Screen / Maximum Compression)</option>
             <option value="96">96 DPI (Email Standard)</option>
@@ -187,7 +187,7 @@ export function TargetSizeInput({
           <button
             type="button"
             onClick={() => setShowAdvanced(!showAdvanced)}
-            className="flex w-full items-center justify-between text-xs font-semibold text-slate-600 hover:text-indigo-600 dark:text-slate-400"
+            className="flex w-full items-center justify-between text-xs font-semibold text-slate-600 hover:text-red-600 dark:text-slate-400"
           >
             <span>Advanced Settings</span>
             <ChevronDown
@@ -206,7 +206,7 @@ export function TargetSizeInput({
                   onChange={(e) =>
                     onChange({ ...options, downsampleImages: e.target.checked })
                   }
-                  className="rounded border-slate-300 text-indigo-600 focus:ring-indigo-500 dark:border-slate-700"
+                  className="rounded border-slate-300 text-red-600 focus:ring-red-500 dark:border-slate-700"
                 />
                 <span>Downsample raster images</span>
               </label>
@@ -218,7 +218,7 @@ export function TargetSizeInput({
                   onChange={(e) =>
                     onChange({ ...options, grayscale: e.target.checked })
                   }
-                  className="rounded border-slate-300 text-indigo-600 focus:ring-indigo-500 dark:border-slate-700"
+                  className="rounded border-slate-300 text-red-600 focus:ring-red-500 dark:border-slate-700"
                 />
                 <span>Convert images to Grayscale (Saves up to 60% extra)</span>
               </label>
@@ -230,7 +230,7 @@ export function TargetSizeInput({
                   onChange={(e) =>
                     onChange({ ...options, removeMetadata: e.target.checked })
                   }
-                  className="rounded border-slate-300 text-indigo-600 focus:ring-indigo-500 dark:border-slate-700"
+                  className="rounded border-slate-300 text-red-600 focus:ring-red-500 dark:border-slate-700"
                 />
                 <span>Strip document metadata (Author, Producer, XML)</span>
               </label>
@@ -244,7 +244,7 @@ export function TargetSizeInput({
             type="button"
             onClick={onCompress}
             disabled={isProcessing}
-            className="flex w-full items-center justify-center gap-2 rounded-2xl bg-indigo-600 py-3.5 text-sm font-bold text-white shadow-lg shadow-indigo-500/25 transition-all hover:bg-indigo-700 disabled:opacity-50"
+            className="flex w-full items-center justify-center gap-2 rounded-2xl bg-red-600 py-3.5 text-sm font-bold text-white shadow-lg shadow-red-500/25 transition-all hover:bg-red-700 disabled:opacity-50"
           >
             <Sparkles className="h-4 w-4" />
             <span>{isProcessing ? "Optimizing..." : "Compress PDF"}</span>

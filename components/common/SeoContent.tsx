@@ -15,7 +15,7 @@ export function SeoContent({ tool, relatedTools = [] }: SeoContentProps) {
         {/* Step by step guide */}
         <section>
           <div className="flex items-center gap-2">
-            <span className="flex h-6 w-6 items-center justify-center rounded-full bg-indigo-600 text-xs font-bold text-white">
+            <span className="flex h-6 w-6 items-center justify-center rounded-full bg-red-600 text-xs font-bold text-white">
               1
             </span>
             <h2 className="text-xl font-bold tracking-tight text-slate-900 dark:text-white">
@@ -31,7 +31,7 @@ export function SeoContent({ tool, relatedTools = [] }: SeoContentProps) {
                 key={idx}
                 className="flex items-start gap-3 rounded-2xl border border-slate-100 bg-white p-4 shadow-xs dark:border-slate-800 dark:bg-slate-900"
               >
-                <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-xl bg-indigo-50 text-xs font-bold text-indigo-600 dark:bg-indigo-950 dark:text-indigo-400">
+                <div className="flex h-7 w-7 shrink-0 items-center justify-center rounded-xl bg-red-50 text-xs font-bold text-red-600 dark:bg-red-950 dark:text-red-400">
                   {idx + 1}
                 </div>
                 <p className="text-xs leading-relaxed text-slate-600 dark:text-slate-300">
@@ -60,7 +60,7 @@ export function SeoContent({ tool, relatedTools = [] }: SeoContentProps) {
               </p>
             </div>
             <div className="space-y-2">
-              <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-indigo-100 text-indigo-600 dark:bg-indigo-950 dark:text-indigo-400">
+              <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-red-100 text-red-600 dark:bg-red-950 dark:text-red-400">
                 <Zap className="h-5 w-5" />
               </div>
               <h3 className="text-sm font-semibold text-slate-900 dark:text-white">
@@ -95,12 +95,12 @@ export function SeoContent({ tool, relatedTools = [] }: SeoContentProps) {
                 <Link
                   key={rel.id}
                   href={rel.href}
-                  className="group flex items-center justify-between rounded-2xl border border-slate-200 bg-white p-4 transition-all hover:border-indigo-400 hover:shadow-md dark:border-slate-800 dark:bg-slate-900"
+                  className="group flex items-center justify-between rounded-2xl border border-slate-200 bg-white p-4 transition-all hover:border-red-400 hover:shadow-md dark:border-slate-800 dark:bg-slate-900"
                 >
-                  <span className="text-xs font-semibold text-slate-800 group-hover:text-indigo-600 dark:text-slate-200 dark:group-hover:text-indigo-400">
+                  <span className="text-xs font-semibold text-slate-800 group-hover:text-red-600 dark:text-slate-200 dark:group-hover:text-red-400">
                     {rel.name}
                   </span>
-                  <ArrowRight className="h-4 w-4 text-slate-400 transition-transform group-hover:translate-x-1 group-hover:text-indigo-600" />
+                  <ArrowRight className="h-4 w-4 text-slate-400 transition-transform group-hover:translate-x-1 group-hover:text-red-600" />
                 </Link>
               ))}
             </div>

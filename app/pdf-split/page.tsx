@@ -131,7 +131,7 @@ export default function PdfSplitPage() {
                   onClick={() => setMode("ranges")}
                   className={`rounded-2xl p-3 text-center transition ${
                     mode === "ranges"
-                      ? "border-2 border-indigo-600 bg-indigo-50/50 text-indigo-700 dark:bg-indigo-950/40 dark:text-indigo-300"
+                      ? "border-2 border-red-600 bg-red-50/50 text-red-700 dark:bg-red-950/40 dark:text-red-300"
                       : "border border-slate-200 text-slate-600 hover:bg-slate-50 dark:border-slate-700 dark:text-slate-300"
                   }`}
                 >
@@ -144,7 +144,7 @@ export default function PdfSplitPage() {
                   onClick={() => setMode("everyN")}
                   className={`rounded-2xl p-3 text-center transition ${
                     mode === "everyN"
-                      ? "border-2 border-indigo-600 bg-indigo-50/50 text-indigo-700 dark:bg-indigo-950/40 dark:text-indigo-300"
+                      ? "border-2 border-red-600 bg-red-50/50 text-red-700 dark:bg-red-950/40 dark:text-red-300"
                       : "border border-slate-200 text-slate-600 hover:bg-slate-50 dark:border-slate-700 dark:text-slate-300"
                   }`}
                 >
@@ -157,7 +157,7 @@ export default function PdfSplitPage() {
                   onClick={() => setMode("all")}
                   className={`rounded-2xl p-3 text-center transition ${
                     mode === "all"
-                      ? "border-2 border-indigo-600 bg-indigo-50/50 text-indigo-700 dark:bg-indigo-950/40 dark:text-indigo-300"
+                      ? "border-2 border-red-600 bg-red-50/50 text-red-700 dark:bg-red-950/40 dark:text-red-300"
                       : "border border-slate-200 text-slate-600 hover:bg-slate-50 dark:border-slate-700 dark:text-slate-300"
                   }`}
                 >
@@ -177,10 +177,10 @@ export default function PdfSplitPage() {
                     value={rangeStr}
                     onChange={(e) => setRangeStr(e.target.value)}
                     placeholder="e.g. 1-3, 5, 8-10"
-                    className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-bold text-slate-900 focus:border-indigo-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
+                    className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-bold text-slate-900 focus:border-red-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
                   />
                   <p className="mt-1 text-[11px] text-slate-400">
-                    Separate pages or ranges with commas. Example: <code className="text-indigo-600">1-4, 6, 8-10</code>
+                    Separate pages or ranges with commas. Example: <code className="text-red-600">1-4, 6, 8-10</code>
                   </p>
                 </div>
               )}
@@ -198,7 +198,7 @@ export default function PdfSplitPage() {
                       max="100"
                       value={everyNValue}
                       onChange={(e) => setEveryNValue(parseInt(e.target.value, 10) || 1)}
-                      className="w-20 rounded-xl border border-slate-300 bg-white px-3 py-1.5 text-xs font-bold text-slate-900 focus:border-indigo-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
+                      className="w-20 rounded-xl border border-slate-300 bg-white px-3 py-1.5 text-xs font-bold text-slate-900 focus:border-red-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
                     />
                     <span className="text-xs text-slate-500">pages</span>
                   </div>
@@ -209,7 +209,7 @@ export default function PdfSplitPage() {
                 type="button"
                 onClick={handleSplit}
                 disabled={isSplitting}
-                className="mt-6 flex w-full items-center justify-center gap-2 rounded-2xl bg-indigo-600 py-3.5 text-sm font-bold text-white shadow-lg shadow-indigo-500/25 transition hover:bg-indigo-700 disabled:opacity-50"
+                className="mt-6 flex w-full items-center justify-center gap-2 rounded-2xl bg-red-600 py-3.5 text-sm font-bold text-white shadow-lg shadow-red-500/25 transition hover:bg-red-700 disabled:opacity-50"
               >
                 <Split className="h-4 w-4" />
                 <span>{isSplitting ? "Splitting PDF..." : "Split PDF"}</span>
@@ -246,7 +246,7 @@ export default function PdfSplitPage() {
                     <button
                       type="button"
                       onClick={() => downloadSingleFile(res)}
-                      className="inline-flex items-center gap-1 rounded-lg bg-white px-2.5 py-1 text-[11px] font-bold text-indigo-600 shadow-xs hover:bg-indigo-50 dark:bg-slate-800 dark:text-indigo-400"
+                      className="inline-flex items-center gap-1 rounded-lg bg-white px-2.5 py-1 text-[11px] font-bold text-red-600 shadow-xs hover:bg-red-50 dark:bg-slate-800 dark:text-red-400"
                     >
                       <Download className="h-3 w-3" />
                       <span>Download</span>
@@ -260,7 +260,7 @@ export default function PdfSplitPage() {
                   <button
                     type="button"
                     onClick={downloadZipArchive}
-                    className="flex flex-1 items-center justify-center gap-2 rounded-2xl bg-indigo-600 py-3.5 text-sm font-bold text-white shadow-md hover:bg-indigo-700"
+                    className="flex flex-1 items-center justify-center gap-2 rounded-2xl bg-red-600 py-3.5 text-sm font-bold text-white shadow-md hover:bg-red-700"
                   >
                     <Archive className="h-4 w-4" />
                     <span>Download All (ZIP)</span>

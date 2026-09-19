@@ -121,7 +121,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(siteNavigationSchema) }}
         />
       </head>
-      <body className="flex min-h-screen flex-col bg-slate-50 text-slate-900 antialiased selection:bg-indigo-600 selection:text-white dark:bg-slate-950 dark:text-slate-100">
+      <body className="flex min-h-screen flex-col bg-slate-50 text-slate-900 antialiased selection:bg-red-600 selection:text-white dark:bg-slate-950 dark:text-slate-100">
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

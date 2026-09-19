@@ -64,7 +64,7 @@ export function AdSlot({
           <div className="flex w-full flex-col items-center justify-center gap-1 rounded-lg bg-slate-100/50 py-6 text-slate-400 dark:bg-slate-800/30 dark:text-slate-500">
             <span className="text-xs font-semibold tracking-wide">Ad Placement Area</span>
             <span className="text-[11px]">
-              Set <code className="rounded bg-slate-200/80 px-1 py-0.5 text-indigo-600 dark:bg-slate-700 dark:text-indigo-400">NEXT_PUBLIC_ADSENSE_CLIENT</code> to activate live ads
+              Set <code className="rounded bg-slate-200/80 px-1 py-0.5 text-red-600 dark:bg-slate-700 dark:text-red-400">NEXT_PUBLIC_ADSENSE_CLIENT</code> to activate live ads
             </span>
           </div>
         )}

@@ -17,7 +17,7 @@ export default function AboutPage() {
       <AdSlot slotId="about-top-banner" format="horizontal" />
 
       <div className="text-center">
-        <span className="text-xs font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400">
+        <span className="text-xs font-bold uppercase tracking-wider text-red-600 dark:text-red-400">
           Our Mission
         </span>
         <h1 className="mt-2 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-5xl dark:text-white">
@@ -53,7 +53,7 @@ export default function AboutPage() {
           </div>
 
           <div className="rounded-3xl border border-slate-200 bg-white p-6 dark:border-slate-800 dark:bg-slate-900">
-            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600 dark:bg-indigo-950 dark:text-indigo-400">
+            <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-red-50 text-red-600 dark:bg-red-950 dark:text-red-400">
               <Cpu className="h-5 w-5" />
             </div>
             <h3 className="mt-4 text-base font-bold text-slate-900 dark:text-white">Client Hardware</h3>
@@ -83,7 +83,7 @@ export default function AboutPage() {
           <div className="mt-6">
             <Link
               href="/pdf-compressor"
-              className="inline-flex items-center gap-2 rounded-xl bg-indigo-600 px-5 py-2.5 text-xs font-bold text-white shadow-md hover:bg-indigo-700"
+              className="inline-flex items-center gap-2 rounded-xl bg-red-600 px-5 py-2.5 text-xs font-bold text-white shadow-md hover:bg-red-700"
             >
               <span>Explore Our Free Tools</span>
               <ArrowRight className="h-4 w-4" />

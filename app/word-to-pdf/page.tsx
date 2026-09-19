@@ -113,7 +113,7 @@ export default function WordToPdfPage() {
                 type="button"
                 onClick={handleConvert}
                 disabled={isConverting}
-                className="mt-6 flex w-full items-center justify-center gap-2 rounded-2xl bg-indigo-600 py-3.5 text-sm font-bold text-white shadow-lg shadow-indigo-500/25 transition hover:bg-indigo-700 disabled:opacity-50"
+                className="mt-6 flex w-full items-center justify-center gap-2 rounded-2xl bg-red-600 py-3.5 text-sm font-bold text-white shadow-lg shadow-red-500/25 transition hover:bg-red-700 disabled:opacity-50"
               >
                 <Sparkles className="h-4 w-4" />
                 <span>{isConverting ? "Converting..." : "Convert to PDF"}</span>
@@ -141,7 +141,7 @@ export default function WordToPdfPage() {
                 <button
                   type="button"
                   onClick={downloadPdf}
-                  className="flex flex-1 items-center justify-center gap-2 rounded-2xl bg-indigo-600 py-3.5 text-sm font-bold text-white shadow-md hover:bg-indigo-700"
+                  className="flex flex-1 items-center justify-center gap-2 rounded-2xl bg-red-600 py-3.5 text-sm font-bold text-white shadow-md hover:bg-red-700"
                 >
                   <Download className="h-4 w-4" />
                   <span>Download PDF Document</span>

@@ -103,7 +103,7 @@ export default function PdfMergePage() {
 
       {/* Title */}
       <div className="text-center">
-        <div className="inline-flex items-center gap-2 rounded-full bg-indigo-50 px-3 py-1 text-xs font-semibold text-indigo-700 dark:bg-indigo-950 dark:text-indigo-300">
+        <div className="inline-flex items-center gap-2 rounded-full bg-red-50 px-3 py-1 text-xs font-semibold text-red-700 dark:bg-red-950 dark:text-red-300">
           <Merge className="h-3.5 w-3.5" />
           <span>Multi-File Combiner</span>
         </div>
@@ -147,7 +147,7 @@ export default function PdfMergePage() {
                     className="flex items-center justify-between rounded-xl border border-slate-100 bg-slate-50/80 p-3 dark:border-slate-800 dark:bg-slate-800/40"
                   >
                     <div className="flex items-center gap-3 overflow-hidden">
-                      <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg bg-indigo-100 text-xs font-bold text-indigo-700 dark:bg-indigo-950 dark:text-indigo-300">
+                      <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg bg-red-100 text-xs font-bold text-red-700 dark:bg-red-950 dark:text-red-300">
                         {idx + 1}
                       </span>
                       <div className="overflow-hidden">
@@ -194,7 +194,7 @@ export default function PdfMergePage() {
                 type="button"
                 onClick={handleMerge}
                 disabled={files.length < 2 || isMerging}
-                className="mt-6 flex w-full items-center justify-center gap-2 rounded-2xl bg-indigo-600 py-3.5 text-sm font-bold text-white shadow-lg shadow-indigo-500/25 transition hover:bg-indigo-700 disabled:opacity-50"
+                className="mt-6 flex w-full items-center justify-center gap-2 rounded-2xl bg-red-600 py-3.5 text-sm font-bold text-white shadow-lg shadow-red-500/25 transition hover:bg-red-700 disabled:opacity-50"
               >
                 <Merge className="h-4 w-4" />
                 <span>{isMerging ? "Merging Documents..." : `Merge ${files.length} PDFs`}</span>
@@ -222,7 +222,7 @@ export default function PdfMergePage() {
                 <button
                   type="button"
                   onClick={downloadMerged}
-                  className="flex flex-1 items-center justify-center gap-2 rounded-2xl bg-indigo-600 py-3.5 text-sm font-bold text-white shadow-md hover:bg-indigo-700"
+                  className="flex flex-1 items-center justify-center gap-2 rounded-2xl bg-red-600 py-3.5 text-sm font-bold text-white shadow-md hover:bg-red-700"
                 >
                   <Download className="h-4 w-4" />
                   <span>Download Merged PDF</span>

@@ -235,7 +235,7 @@ export default function PdfSignPage() {
                   onClick={() => setSignMethod("draw")}
                   className={`flex items-center justify-center gap-1.5 rounded-xl p-2.5 text-xs font-bold transition ${
                     signMethod === "draw"
-                      ? "bg-indigo-600 text-white shadow-sm"
+                      ? "bg-red-600 text-white shadow-sm"
                       : "border border-slate-200 text-slate-600 hover:bg-slate-50 dark:border-slate-700 dark:text-slate-300"
                   }`}
                 >
@@ -247,7 +247,7 @@ export default function PdfSignPage() {
                   onClick={() => setSignMethod("type")}
                   className={`flex items-center justify-center gap-1.5 rounded-xl p-2.5 text-xs font-bold transition ${
                     signMethod === "type"
-                      ? "bg-indigo-600 text-white shadow-sm"
+                      ? "bg-red-600 text-white shadow-sm"
                       : "border border-slate-200 text-slate-600 hover:bg-slate-50 dark:border-slate-700 dark:text-slate-300"
                   }`}
                 >
@@ -259,7 +259,7 @@ export default function PdfSignPage() {
                   onClick={() => setSignMethod("upload")}
                   className={`flex items-center justify-center gap-1.5 rounded-xl p-2.5 text-xs font-bold transition ${
                     signMethod === "upload"
-                      ? "bg-indigo-600 text-white shadow-sm"
+                      ? "bg-red-600 text-white shadow-sm"
                       : "border border-slate-200 text-slate-600 hover:bg-slate-50 dark:border-slate-700 dark:text-slate-300"
                   }`}
                 >
@@ -302,7 +302,7 @@ export default function PdfSignPage() {
                       value={typedName}
                       onChange={(e) => generateTypedSignature(e.target.value)}
                       placeholder="Type your full name..."
-                      className="w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-bold text-slate-900 focus:border-indigo-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
+                      className="w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-bold text-slate-900 focus:border-red-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
                     />
                     {signatureDataUrl && (
                       <div className="mt-3 flex items-center justify-center rounded-2xl border border-slate-200 bg-slate-50 p-4 dark:border-slate-800 dark:bg-slate-800/50">
@@ -325,7 +325,7 @@ export default function PdfSignPage() {
                     <button
                       type="button"
                       onClick={() => imageUploadRef.current?.click()}
-                      className="flex w-full flex-col items-center justify-center rounded-2xl border-2 border-dashed border-slate-300 p-6 hover:border-indigo-500 dark:border-slate-700"
+                      className="flex w-full flex-col items-center justify-center rounded-2xl border-2 border-dashed border-slate-300 p-6 hover:border-red-500 dark:border-slate-700"
                     >
                       <Upload className="h-6 w-6 text-slate-400" />
                       <span className="mt-2 text-xs font-bold text-slate-700 dark:text-slate-300">
@@ -352,7 +352,7 @@ export default function PdfSignPage() {
                   min="1"
                   value={targetPage}
                   onChange={(e) => setTargetPage(parseInt(e.target.value, 10) || 1)}
-                  className="mt-1.5 w-28 rounded-xl border border-slate-300 bg-white px-3 py-1.5 text-xs font-bold text-slate-900 focus:border-indigo-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
+                  className="mt-1.5 w-28 rounded-xl border border-slate-300 bg-white px-3 py-1.5 text-xs font-bold text-slate-900 focus:border-red-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
                 />
               </div>
 
@@ -368,7 +368,7 @@ export default function PdfSignPage() {
                 type="button"
                 onClick={handleSignPdf}
                 disabled={!signatureDataUrl || isExporting}
-                className="mt-6 flex w-full items-center justify-center gap-2 rounded-2xl bg-indigo-600 py-3.5 text-sm font-bold text-white shadow-lg shadow-indigo-500/25 transition hover:bg-indigo-700 disabled:opacity-50"
+                className="mt-6 flex w-full items-center justify-center gap-2 rounded-2xl bg-red-600 py-3.5 text-sm font-bold text-white shadow-lg shadow-red-500/25 transition hover:bg-red-700 disabled:opacity-50"
               >
                 <Sparkles className="h-4 w-4" />
                 <span>{isExporting ? "Stamping..." : "Sign Document"}</span>
@@ -396,7 +396,7 @@ export default function PdfSignPage() {
                 <button
                   type="button"
                   onClick={downloadSigned}
-                  className="flex flex-1 items-center justify-center gap-2 rounded-2xl bg-indigo-600 py-3.5 text-sm font-bold text-white shadow-md hover:bg-indigo-700"
+                  className="flex flex-1 items-center justify-center gap-2 rounded-2xl bg-red-600 py-3.5 text-sm font-bold text-white shadow-md hover:bg-red-700"
                 >
                   <Download className="h-4 w-4" />
                   <span>Download Signed PDF</span>

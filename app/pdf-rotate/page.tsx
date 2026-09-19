@@ -124,7 +124,7 @@ export default function PdfRotatePage() {
                   onClick={() => setRotationAngle(90)}
                   className={`flex flex-col items-center justify-center rounded-2xl p-3 transition ${
                     rotationAngle === 90
-                      ? "border-2 border-indigo-600 bg-indigo-50/50 text-indigo-700 dark:bg-indigo-950/40 dark:text-indigo-300"
+                      ? "border-2 border-red-600 bg-red-50/50 text-red-700 dark:bg-red-950/40 dark:text-red-300"
                       : "border border-slate-200 text-slate-700 hover:bg-slate-50 dark:border-slate-700 dark:text-slate-300"
                   }`}
                 >
@@ -137,7 +137,7 @@ export default function PdfRotatePage() {
                   onClick={() => setRotationAngle(270)}
                   className={`flex flex-col items-center justify-center rounded-2xl p-3 transition ${
                     rotationAngle === 270
-                      ? "border-2 border-indigo-600 bg-indigo-50/50 text-indigo-700 dark:bg-indigo-950/40 dark:text-indigo-300"
+                      ? "border-2 border-red-600 bg-red-50/50 text-red-700 dark:bg-red-950/40 dark:text-red-300"
                       : "border border-slate-200 text-slate-700 hover:bg-slate-50 dark:border-slate-700 dark:text-slate-300"
                   }`}
                 >
@@ -150,7 +150,7 @@ export default function PdfRotatePage() {
                   onClick={() => setRotationAngle(180)}
                   className={`flex flex-col items-center justify-center rounded-2xl p-3 transition ${
                     rotationAngle === 180
-                      ? "border-2 border-indigo-600 bg-indigo-50/50 text-indigo-700 dark:bg-indigo-950/40 dark:text-indigo-300"
+                      ? "border-2 border-red-600 bg-red-50/50 text-red-700 dark:bg-red-950/40 dark:text-red-300"
                       : "border border-slate-200 text-slate-700 hover:bg-slate-50 dark:border-slate-700 dark:text-slate-300"
                   }`}
                 >
@@ -171,7 +171,7 @@ export default function PdfRotatePage() {
                       name="pageScope"
                       checked={pageScope === "all"}
                       onChange={() => setPageScope("all")}
-                      className="text-indigo-600"
+                      className="text-red-600"
                     />
                     <span>All Pages</span>
                   </label>
@@ -181,7 +181,7 @@ export default function PdfRotatePage() {
                       name="pageScope"
                       checked={pageScope === "custom"}
                       onChange={() => setPageScope("custom")}
-                      className="text-indigo-600"
+                      className="text-red-600"
                     />
                     <span>Specific Pages</span>
                   </label>
@@ -193,7 +193,7 @@ export default function PdfRotatePage() {
                     value={customPages}
                     onChange={(e) => setCustomPages(e.target.value)}
                     placeholder="e.g. 1, 3, 5"
-                    className="mt-3 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-bold text-slate-900 focus:border-indigo-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
+                    className="mt-3 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-bold text-slate-900 focus:border-red-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
                   />
                 )}
               </div>
@@ -202,7 +202,7 @@ export default function PdfRotatePage() {
                 type="button"
                 onClick={handleRotate}
                 disabled={isRotating}
-                className="mt-6 flex w-full items-center justify-center gap-2 rounded-2xl bg-indigo-600 py-3.5 text-sm font-bold text-white shadow-lg shadow-indigo-500/25 transition hover:bg-indigo-700 disabled:opacity-50"
+                className="mt-6 flex w-full items-center justify-center gap-2 rounded-2xl bg-red-600 py-3.5 text-sm font-bold text-white shadow-lg shadow-red-500/25 transition hover:bg-red-700 disabled:opacity-50"
               >
                 <RotateCw className="h-4 w-4" />
                 <span>{isRotating ? "Rotating Pages..." : "Apply Rotation"}</span>
@@ -230,7 +230,7 @@ export default function PdfRotatePage() {
                 <button
                   type="button"
                   onClick={downloadRotated}
-                  className="flex flex-1 items-center justify-center gap-2 rounded-2xl bg-indigo-600 py-3.5 text-sm font-bold text-white shadow-md hover:bg-indigo-700"
+                  className="flex flex-1 items-center justify-center gap-2 rounded-2xl bg-red-600 py-3.5 text-sm font-bold text-white shadow-md hover:bg-red-700"
                 >
                   <Download className="h-4 w-4" />
                   <span>Download Rotated PDF</span>

@@ -70,17 +70,17 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative overflow-hidden px-4 pb-16 pt-8 sm:px-6 lg:px-8">
         {/* Glow backdrop */}
-        <div className="pointer-events-none absolute -top-40 left-1/2 -z-10 h-[500px] w-[800px] -translate-x-1/2 animate-float-slow rounded-full bg-gradient-to-tr from-indigo-500/15 via-violet-500/10 to-transparent blur-3xl dark:from-indigo-900/25 dark:via-violet-900/15" />
+        <div className="pointer-events-none absolute -top-40 left-1/2 -z-10 h-[500px] w-[800px] -translate-x-1/2 animate-float-slow rounded-full bg-gradient-to-tr from-red-500/15 via-rose-500/10 to-transparent blur-3xl dark:from-red-900/25 dark:via-rose-900/15" />
 
         <div className="mx-auto max-w-5xl text-center">
-          <div className="inline-flex animate-fade-in-up items-center gap-2 rounded-full border border-indigo-200/70 bg-indigo-50/80 px-4 py-1.5 text-xs font-semibold text-indigo-700 backdrop-blur-xs dark:border-indigo-900/50 dark:bg-indigo-950/40 dark:text-indigo-300">
-            <Sparkles className="h-3.5 w-3.5 text-indigo-600 dark:text-indigo-400" />
+          <div className="inline-flex animate-fade-in-up items-center gap-2 rounded-full border border-red-200/70 bg-red-50/80 px-4 py-1.5 text-xs font-semibold text-red-700 backdrop-blur-xs dark:border-red-900/50 dark:bg-red-950/40 dark:text-red-300">
+            <Sparkles className="h-3.5 w-3.5 text-red-600 dark:text-red-400" />
             <span>Next-Gen WebAssembly PDF Utility</span>
           </div>
 
           <h1 className="mt-6 animate-fade-in-up text-4xl font-extrabold tracking-tight text-slate-900 sm:text-6xl dark:text-white" style={{ animationDelay: "60ms" }}>
             Free PDF Tools —{" "}
-            <span className="bg-gradient-to-r from-indigo-600 via-violet-600 to-indigo-700 bg-clip-text text-transparent dark:from-indigo-400 dark:via-violet-400 dark:to-indigo-300">
+            <span className="bg-gradient-to-r from-red-600 via-rose-600 to-red-700 bg-clip-text text-transparent dark:from-red-400 dark:via-rose-400 dark:to-red-300">
               Convert, Compress, Edit
             </span>{" "}
             & More
@@ -94,7 +94,7 @@ export default function HomePage() {
           <div className="mt-8 flex animate-fade-in-up flex-wrap items-center justify-center gap-4" style={{ animationDelay: "180ms" }}>
             <a
               href="#all-tools"
-              className="inline-flex items-center gap-2 rounded-2xl bg-indigo-600 px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-indigo-500/25 transition-all hover:-translate-y-0.5 hover:bg-indigo-700 hover:shadow-xl hover:shadow-indigo-500/30"
+              className="inline-flex items-center gap-2 rounded-2xl bg-red-600 px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-red-500/25 transition-all hover:-translate-y-0.5 hover:bg-red-700 hover:shadow-xl hover:shadow-red-500/30"
             >
               <span>Explore PDF Tools</span>
               <ArrowRight className="h-4 w-4" />
@@ -103,7 +103,7 @@ export default function HomePage() {
               href="/pdf-compressor"
               className="inline-flex items-center gap-2 rounded-2xl border border-slate-200 bg-white px-6 py-3.5 text-sm font-bold text-slate-800 shadow-xs transition hover:-translate-y-0.5 hover:bg-slate-50 hover:shadow-md dark:border-slate-800 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800"
             >
-              <FileDown className="h-4 w-4 text-indigo-600 dark:text-indigo-400" />
+              <FileDown className="h-4 w-4 text-red-600 dark:text-red-400" />
               <span>Compress a PDF</span>
             </Link>
           </div>
@@ -112,17 +112,17 @@ export default function HomePage() {
           <div className="mt-8 flex animate-fade-in-up flex-wrap items-center justify-center gap-x-8 gap-y-3 text-xs font-medium text-slate-500 dark:text-slate-400" style={{ animationDelay: "240ms" }}>
             <span className="flex items-center gap-1.5"><ShieldCheck className="h-4 w-4 text-emerald-500" /> 100% private</span>
             <span className="flex items-center gap-1.5"><Zap className="h-4 w-4 text-amber-500" /> Instant processing</span>
-            <span className="flex items-center gap-1.5"><Lock className="h-4 w-4 text-indigo-500" /> No uploads</span>
-            <span className="flex items-center gap-1.5"><CheckCircle2 className="h-4 w-4 text-violet-500" /> 18+ free tools</span>
+            <span className="flex items-center gap-1.5"><Lock className="h-4 w-4 text-red-500" /> No uploads</span>
+            <span className="flex items-center gap-1.5"><CheckCircle2 className="h-4 w-4 text-rose-500" /> 18+ free tools</span>
           </div>
 
           {/* Quick Dropzone Box */}
           <div className="mx-auto mt-12 max-w-2xl">
             <div
               onClick={() => router.push("/pdf-compressor")}
-              className="group flex cursor-pointer flex-col items-center justify-center rounded-3xl border-2 border-dashed border-indigo-200 bg-white/70 p-8 shadow-md backdrop-blur-xs transition-all hover:border-indigo-500 hover:bg-white dark:border-indigo-900/60 dark:bg-slate-900/70"
+              className="group flex cursor-pointer flex-col items-center justify-center rounded-3xl border-2 border-dashed border-red-200 bg-white/70 p-8 shadow-md backdrop-blur-xs transition-all hover:border-red-500 hover:bg-white dark:border-red-900/60 dark:bg-slate-900/70"
             >
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-indigo-50 text-indigo-600 transition-transform group-hover:scale-110 dark:bg-indigo-950 dark:text-indigo-400">
+              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-red-50 text-red-600 transition-transform group-hover:scale-110 dark:bg-red-950 dark:text-red-400">
                 <UploadCloud className="h-6 w-6" />
               </div>
               <p className="mt-3 text-sm font-bold text-slate-800 dark:text-slate-100">
@@ -148,7 +148,7 @@ export default function HomePage() {
             </div>
             <Link
               href="/pdf-converter"
-              className="text-xs font-semibold text-indigo-600 hover:underline dark:text-indigo-400"
+              className="text-xs font-semibold text-red-600 hover:underline dark:text-red-400"
             >
               View all &rarr;
             </Link>
@@ -188,7 +188,7 @@ export default function HomePage() {
                 placeholder="Search tools (e.g. compress, ocr, split)..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full rounded-xl border border-slate-200 bg-white py-2 pl-9 pr-4 text-xs font-medium text-slate-900 placeholder:text-slate-400 focus:border-indigo-600 focus:outline-none dark:border-slate-800 dark:bg-slate-900 dark:text-white"
+                className="w-full rounded-xl border border-slate-200 bg-white py-2 pl-9 pr-4 text-xs font-medium text-slate-900 placeholder:text-slate-400 focus:border-red-600 focus:outline-none dark:border-slate-800 dark:bg-slate-900 dark:text-white"
               />
             </div>
           </div>
@@ -202,7 +202,7 @@ export default function HomePage() {
                 onClick={() => setSelectedCategory(cat)}
                 className={`rounded-xl px-4 py-2 text-xs font-semibold transition-all ${
                   selectedCategory === cat
-                    ? "bg-indigo-600 text-white shadow-md shadow-indigo-500/20"
+                    ? "bg-red-600 text-white shadow-md shadow-red-500/20"
                     : "border border-slate-200 bg-white text-slate-600 hover:bg-slate-50 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-300"
                 }`}
               >
@@ -224,7 +224,7 @@ export default function HomePage() {
       <section className="border-t border-slate-200/80 bg-slate-50/70 py-16 dark:border-slate-800/80 dark:bg-slate-900/40">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <span className="text-xs font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400">
+            <span className="text-xs font-bold uppercase tracking-wider text-red-600 dark:text-red-400">
               Simple & Fast
             </span>
             <h2 className="mt-2 text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white">
@@ -237,7 +237,7 @@ export default function HomePage() {
 
           <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             <div className="relative rounded-3xl border border-slate-200 bg-white p-6 shadow-xs dark:border-slate-800 dark:bg-slate-900">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-indigo-50 text-base font-black text-indigo-600 dark:bg-indigo-950 dark:text-indigo-400">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-red-50 text-base font-black text-red-600 dark:bg-red-950 dark:text-red-400">
                 1
               </div>
               <h3 className="mt-4 text-base font-bold text-slate-900 dark:text-white">Upload Your File</h3>
@@ -247,7 +247,7 @@ export default function HomePage() {
             </div>
 
             <div className="relative rounded-3xl border border-slate-200 bg-white p-6 shadow-xs dark:border-slate-800 dark:bg-slate-900">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-violet-50 text-base font-black text-violet-600 dark:bg-violet-950 dark:text-violet-400">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-rose-50 text-base font-black text-rose-600 dark:bg-rose-950 dark:text-rose-400">
                 2
               </div>
               <h3 className="mt-4 text-base font-bold text-slate-900 dark:text-white">Choose Your Options</h3>
@@ -281,9 +281,9 @@ export default function HomePage() {
 
       {/* Security & Privacy Feature Highlight */}
       <section className="py-16">
-        <div className="mx-auto max-w-5xl rounded-3xl border border-indigo-100 bg-gradient-to-b from-indigo-50/50 to-transparent p-8 sm:p-12 dark:border-indigo-950 dark:from-indigo-950/20">
+        <div className="mx-auto max-w-5xl rounded-3xl border border-red-100 bg-gradient-to-b from-red-50/50 to-transparent p-8 sm:p-12 dark:border-red-950 dark:from-red-950/20">
           <div className="flex flex-col items-center text-center">
-            <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-indigo-600 text-white shadow-md shadow-indigo-500/20">
+            <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-red-600 text-white shadow-md shadow-red-500/20">
               <ShieldCheck className="h-8 w-8" />
             </div>
             <h2 className="mt-4 text-2xl font-bold text-slate-900 dark:text-white sm:text-3xl">

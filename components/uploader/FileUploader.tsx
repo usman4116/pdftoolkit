@@ -119,11 +119,11 @@ export function FileUploader({
           onClick={() => fileInputRef.current?.click()}
           className={`group relative flex cursor-pointer flex-col items-center justify-center rounded-3xl border-2 border-dashed p-8 text-center transition-all duration-200 sm:p-12 ${
             isDragOver
-              ? "border-indigo-600 bg-indigo-50/70 scale-[1.01] dark:border-indigo-400 dark:bg-indigo-950/40"
-              : "border-slate-300 bg-white hover:border-indigo-400 hover:bg-slate-50/50 dark:border-slate-700 dark:bg-slate-900/60 dark:hover:border-indigo-500"
+              ? "border-red-600 bg-red-50/70 scale-[1.01] dark:border-red-400 dark:bg-red-950/40"
+              : "border-slate-300 bg-white hover:border-red-400 hover:bg-slate-50/50 dark:border-slate-700 dark:bg-slate-900/60 dark:hover:border-red-500"
           }`}
         >
-          <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-indigo-50 text-indigo-600 transition-transform duration-200 group-hover:scale-110 dark:bg-indigo-950/60 dark:text-indigo-400">
+          <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-red-50 text-red-600 transition-transform duration-200 group-hover:scale-110 dark:bg-red-950/60 dark:text-red-400">
             <UploadCloud className="h-8 w-8" />
           </div>
           <h3 className="mt-4 text-base font-semibold text-slate-800 dark:text-slate-100 sm:text-lg">
@@ -132,7 +132,7 @@ export function FileUploader({
           <p className="mt-1 text-xs text-slate-500 dark:text-slate-400 sm:text-sm">
             {subtitle}
           </p>
-          <div className="mt-5 inline-flex items-center gap-2 rounded-xl bg-indigo-600 px-5 py-2.5 text-xs font-semibold text-white shadow-sm transition hover:bg-indigo-700 sm:text-sm">
+          <div className="mt-5 inline-flex items-center gap-2 rounded-xl bg-red-600 px-5 py-2.5 text-xs font-semibold text-white shadow-sm transition hover:bg-red-700 sm:text-sm">
             <span>Choose File{multiple ? "s" : ""}</span>
           </div>
         </div>
@@ -152,7 +152,7 @@ export function FileUploader({
                   <button
                     type="button"
                     onClick={() => fileInputRef.current?.click()}
-                    className="flex items-center gap-1 text-xs font-medium text-indigo-600 hover:underline dark:text-indigo-400"
+                    className="flex items-center gap-1 text-xs font-medium text-red-600 hover:underline dark:text-red-400"
                   >
                     + Add more
                   </button>
@@ -177,7 +177,7 @@ export function FileUploader({
                 className="flex items-center justify-between rounded-xl border border-slate-100 bg-slate-50/70 px-4 py-2.5 dark:border-slate-800 dark:bg-slate-800/50"
               >
                 <div className="flex items-center gap-3 overflow-hidden">
-                  <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-indigo-100 text-indigo-600 dark:bg-indigo-900/60 dark:text-indigo-300">
+                  <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-red-100 text-red-600 dark:bg-red-900/60 dark:text-red-300">
                     <File className="h-4 w-4" />
                   </div>
                   <div className="overflow-hidden">
@@ -204,17 +204,17 @@ export function FileUploader({
 
           {/* Processing Progress Bar */}
           {isProcessing && (
-            <div className="mt-6 rounded-2xl border border-indigo-100 bg-indigo-50/50 p-4 dark:border-indigo-950 dark:bg-indigo-950/20">
-              <div className="flex items-center justify-between text-xs font-medium text-indigo-900 dark:text-indigo-200">
+            <div className="mt-6 rounded-2xl border border-red-100 bg-red-50/50 p-4 dark:border-red-950 dark:bg-red-950/20">
+              <div className="flex items-center justify-between text-xs font-medium text-red-900 dark:text-red-200">
                 <span className="flex items-center gap-2">
-                  <span className="inline-block h-2 w-2 animate-ping rounded-full bg-indigo-600" />
+                  <span className="inline-block h-2 w-2 animate-ping rounded-full bg-red-600" />
                   {processingStatusText}
                 </span>
                 <span>{processingProgress}%</span>
               </div>
-              <div className="mt-2 h-2 w-full overflow-hidden rounded-full bg-indigo-200/60 dark:bg-indigo-900/50">
+              <div className="mt-2 h-2 w-full overflow-hidden rounded-full bg-red-200/60 dark:bg-red-900/50">
                 <div
-                  className="h-full bg-indigo-600 transition-all duration-300 ease-out dark:bg-indigo-500"
+                  className="h-full bg-red-600 transition-all duration-300 ease-out dark:bg-red-500"
                   style={{ width: `${Math.min(100, Math.max(5, processingProgress))}%` }}
                 />
               </div>

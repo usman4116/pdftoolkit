@@ -474,7 +474,7 @@ export default function PdfEditorPage() {
 
       {/* Page Title */}
       <div className="text-center">
-        <div className="inline-flex items-center gap-2 rounded-full bg-violet-50 px-3 py-1 text-xs font-semibold text-violet-700 dark:bg-violet-950 dark:text-violet-300">
+        <div className="inline-flex items-center gap-2 rounded-full bg-rose-50 px-3 py-1 text-xs font-semibold text-rose-700 dark:bg-rose-950 dark:text-rose-300">
           <PenTool className="h-3.5 w-3.5" />
           <span>Full Browser PDF Annotator</span>
         </div>
@@ -542,7 +542,7 @@ export default function PdfEditorPage() {
                     onClick={() => setActivePage(p)}
                     className={`relative w-full rounded-xl border-2 p-2 text-center transition ${
                       p === activePage
-                        ? "border-indigo-600 bg-indigo-50/50 dark:bg-indigo-950/40"
+                        ? "border-red-600 bg-red-50/50 dark:bg-red-950/40"
                         : "border-slate-200 bg-white opacity-80 hover:opacity-100 dark:border-slate-800 dark:bg-slate-900"
                     }`}
                   >
@@ -550,7 +550,7 @@ export default function PdfEditorPage() {
                       Page {p}
                     </span>
                     {rotatedPages[p] ? (
-                      <span className="mt-0.5 block text-[9px] text-indigo-500">
+                      <span className="mt-0.5 block text-[9px] text-red-500">
                         ({rotatedPages[p]}°)
                       </span>
                     ) : null}
@@ -663,7 +663,7 @@ export default function PdfEditorPage() {
                 <button
                   type="button"
                   onClick={saveSignature}
-                  className="rounded-xl bg-indigo-600 px-4 py-2 text-xs font-bold text-white hover:bg-indigo-700"
+                  className="rounded-xl bg-red-600 px-4 py-2 text-xs font-bold text-white hover:bg-red-700"
                 >
                   Use Signature
                 </button>

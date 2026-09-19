@@ -29,7 +29,7 @@ export default function BlogIndexPage() {
 
       {/* Header */}
       <div className="text-center">
-        <div className="inline-flex items-center gap-2 rounded-full bg-indigo-50 px-3 py-1 text-xs font-semibold text-indigo-700 dark:bg-indigo-950 dark:text-indigo-300">
+        <div className="inline-flex items-center gap-2 rounded-full bg-red-50 px-3 py-1 text-xs font-semibold text-red-700 dark:bg-red-950 dark:text-red-300">
           <BookOpen className="h-3.5 w-3.5" />
           <span>Knowledge Base & Technical Guides</span>
         </div>
@@ -52,7 +52,7 @@ export default function BlogIndexPage() {
               onClick={() => setCategory(cat)}
               className={`rounded-xl px-3.5 py-1.5 text-xs font-semibold transition ${
                 category === cat
-                  ? "bg-indigo-600 text-white shadow-sm"
+                  ? "bg-red-600 text-white shadow-sm"
                   : "border border-slate-200 bg-white text-slate-600 hover:bg-slate-50 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-300"
               }`}
             >
@@ -69,7 +69,7 @@ export default function BlogIndexPage() {
             placeholder="Search articles..."
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="w-full rounded-xl border border-slate-200 bg-white py-2 pl-9 pr-4 text-xs text-slate-900 focus:border-indigo-600 focus:outline-none dark:border-slate-800 dark:bg-slate-900 dark:text-white"
+            className="w-full rounded-xl border border-slate-200 bg-white py-2 pl-9 pr-4 text-xs text-slate-900 focus:border-red-600 focus:outline-none dark:border-slate-800 dark:bg-slate-900 dark:text-white"
           />
         </div>
       </div>
@@ -79,13 +79,13 @@ export default function BlogIndexPage() {
         <div className="mt-8">
           <Link
             href={`/blog/${featured.slug}`}
-            className="group relative block overflow-hidden rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition-all hover:border-indigo-400 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900 sm:p-10"
+            className="group relative block overflow-hidden rounded-3xl border border-slate-200 bg-white p-8 shadow-sm transition-all hover:border-red-400 hover:shadow-xl dark:border-slate-800 dark:bg-slate-900 sm:p-10"
           >
-            <div className="flex items-center gap-2 text-xs font-bold text-indigo-600 dark:text-indigo-400">
+            <div className="flex items-center gap-2 text-xs font-bold text-red-600 dark:text-red-400">
               <Sparkles className="h-4 w-4" />
               <span>FEATURED GUIDE</span>
             </div>
-            <h2 className="mt-4 text-2xl font-extrabold text-slate-900 group-hover:text-indigo-600 sm:text-3xl dark:text-white dark:group-hover:text-indigo-400">
+            <h2 className="mt-4 text-2xl font-extrabold text-slate-900 group-hover:text-red-600 sm:text-3xl dark:text-white dark:group-hover:text-red-400">
               {featured.title}
             </h2>
             <p className="mt-3 max-w-3xl text-sm leading-relaxed text-slate-600 dark:text-slate-300">
@@ -94,7 +94,7 @@ export default function BlogIndexPage() {
             <div className="mt-6 flex items-center gap-6 text-xs text-slate-400">
               <span className="flex items-center gap-1.5"><Calendar className="h-3.5 w-3.5" /> {featured.publishedAt}</span>
               <span className="flex items-center gap-1.5"><Clock className="h-3.5 w-3.5" /> {featured.readTime}</span>
-              <span className="ml-auto inline-flex items-center gap-1 font-bold text-indigo-600 group-hover:underline dark:text-indigo-400">
+              <span className="ml-auto inline-flex items-center gap-1 font-bold text-red-600 group-hover:underline dark:text-red-400">
                 Read Article <ArrowRight className="h-3.5 w-3.5" />
               </span>
             </div>
@@ -108,16 +108,16 @@ export default function BlogIndexPage() {
           <Link
             key={post.slug}
             href={`/blog/${post.slug}`}
-            className="group flex flex-col justify-between rounded-3xl border border-slate-200 bg-white p-6 shadow-xs transition-all hover:-translate-y-1 hover:border-indigo-400 hover:shadow-lg dark:border-slate-800 dark:bg-slate-900"
+            className="group flex flex-col justify-between rounded-3xl border border-slate-200 bg-white p-6 shadow-xs transition-all hover:-translate-y-1 hover:border-red-400 hover:shadow-lg dark:border-slate-800 dark:bg-slate-900"
           >
             <div>
               <div className="flex items-center justify-between text-xs">
-                <span className="rounded-lg bg-indigo-50 px-2.5 py-1 font-bold text-indigo-600 dark:bg-indigo-950 dark:text-indigo-300">
+                <span className="rounded-lg bg-red-50 px-2.5 py-1 font-bold text-red-600 dark:bg-red-950 dark:text-red-300">
                   {post.category}
                 </span>
                 <span className="text-slate-400">{post.readTime}</span>
               </div>
-              <h3 className="mt-4 text-base font-bold text-slate-900 group-hover:text-indigo-600 dark:text-white dark:group-hover:text-indigo-400">
+              <h3 className="mt-4 text-base font-bold text-slate-900 group-hover:text-red-600 dark:text-white dark:group-hover:text-red-400">
                 {post.title}
               </h3>
               <p className="mt-2 text-xs leading-relaxed text-slate-500 dark:text-slate-400">
@@ -127,7 +127,7 @@ export default function BlogIndexPage() {
 
             <div className="mt-6 flex items-center justify-between border-t border-slate-100 pt-4 text-xs font-semibold text-slate-500 dark:border-slate-800">
               <span>{post.publishedAt}</span>
-              <span className="flex items-center gap-1 text-indigo-600 group-hover:underline dark:text-indigo-400">
+              <span className="flex items-center gap-1 text-red-600 group-hover:underline dark:text-red-400">
                 Read &rarr;
               </span>
             </div>

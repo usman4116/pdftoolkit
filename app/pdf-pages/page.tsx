@@ -233,7 +233,7 @@ export default function PdfPagesOrganizerPage() {
                 type="button"
                 onClick={handleSave}
                 disabled={isSaving || isLoading}
-                className="inline-flex items-center gap-1.5 rounded-xl bg-indigo-600 px-4 py-2 text-xs font-bold text-white shadow-md shadow-indigo-500/20 hover:bg-indigo-700 disabled:opacity-50"
+                className="inline-flex items-center gap-1.5 rounded-xl bg-red-600 px-4 py-2 text-xs font-bold text-white shadow-md shadow-red-500/20 hover:bg-red-700 disabled:opacity-50"
               >
                 <Sparkles className="h-3.5 w-3.5" />
                 <span>{isSaving ? "Saving..." : "Save New PDF"}</span>

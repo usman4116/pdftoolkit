@@ -128,7 +128,7 @@ export default function PdfWatermarkPage() {
                     value={options.text}
                     onChange={(e) => setOptions({ ...options, text: e.target.value })}
                     placeholder="e.g. CONFIDENTIAL, DRAFT, DO NOT COPY"
-                    className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-bold text-slate-900 focus:border-indigo-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
+                    className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-bold text-slate-900 focus:border-red-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
                   />
                 </div>
 
@@ -162,7 +162,7 @@ export default function PdfWatermarkPage() {
                       onChange={(e) =>
                         setOptions({ ...options, opacity: parseFloat(e.target.value) })
                       }
-                      className="mt-2 h-2 w-full cursor-pointer rounded-lg bg-slate-200 accent-indigo-600"
+                      className="mt-2 h-2 w-full cursor-pointer rounded-lg bg-slate-200 accent-red-600"
                     />
                   </div>
 
@@ -181,7 +181,7 @@ export default function PdfWatermarkPage() {
                           fontSize: parseInt(e.target.value, 10) || 40,
                         })
                       }
-                      className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-1.5 text-xs font-bold text-slate-900 focus:border-indigo-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
+                      className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-1.5 text-xs font-bold text-slate-900 focus:border-red-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
                     />
                   </div>
                 </div>
@@ -210,7 +210,7 @@ export default function PdfWatermarkPage() {
                     <select
                       value={options.position}
                       onChange={(e) => setOptions({ ...options, position: e.target.value as any })}
-                      className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-bold text-slate-900 focus:border-indigo-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
+                      className="mt-1.5 w-full rounded-xl border border-slate-300 bg-white px-3 py-2 text-xs font-bold text-slate-900 focus:border-red-600 focus:outline-none dark:border-slate-700 dark:bg-slate-800 dark:text-white"
                     >
                       <option value="diagonal">Diagonal Center (-45°)</option>
                       <option value="center">Center Horizontal</option>
@@ -233,7 +233,7 @@ export default function PdfWatermarkPage() {
                         type="radio"
                         checked={options.pageScope === "all"}
                         onChange={() => setOptions({ ...options, pageScope: "all" })}
-                        className="text-indigo-600"
+                        className="text-red-600"
                       />
                       <span>All Pages</span>
                     </label>
@@ -242,7 +242,7 @@ export default function PdfWatermarkPage() {
                         type="radio"
                         checked={options.pageScope === "odd"}
                         onChange={() => setOptions({ ...options, pageScope: "odd" })}
-                        className="text-indigo-600"
+                        className="text-red-600"
                       />
                       <span>Odd Pages Only</span>
                     </label>
@@ -251,7 +251,7 @@ export default function PdfWatermarkPage() {
                         type="radio"
                         checked={options.pageScope === "even"}
                         onChange={() => setOptions({ ...options, pageScope: "even" })}
-                        className="text-indigo-600"
+                        className="text-red-600"
                       />
                       <span>Even Pages Only</span>
                     </label>
@@ -263,7 +263,7 @@ export default function PdfWatermarkPage() {
                 type="button"
                 onClick={handleApplyWatermark}
                 disabled={isProcessing}
-                className="mt-6 flex w-full items-center justify-center gap-2 rounded-2xl bg-indigo-600 py-3.5 text-sm font-bold text-white shadow-lg shadow-indigo-500/25 transition hover:bg-indigo-700 disabled:opacity-50"
+                className="mt-6 flex w-full items-center justify-center gap-2 rounded-2xl bg-red-600 py-3.5 text-sm font-bold text-white shadow-lg shadow-red-500/25 transition hover:bg-red-700 disabled:opacity-50"
               >
                 <Sparkles className="h-4 w-4" />
                 <span>{isProcessing ? "Stamping Watermark..." : "Stamp Watermark"}</span>
@@ -291,7 +291,7 @@ export default function PdfWatermarkPage() {
                 <button
                   type="button"
                   onClick={downloadWatermarked}
-                  className="flex flex-1 items-center justify-center gap-2 rounded-2xl bg-indigo-600 py-3.5 text-sm font-bold text-white shadow-md hover:bg-indigo-700"
+                  className="flex flex-1 items-center justify-center gap-2 rounded-2xl bg-red-600 py-3.5 text-sm font-bold text-white shadow-md hover:bg-red-700"
                 >
                   <Download className="h-4 w-4" />
                   <span>Download Watermarked PDF</span>

@@ -76,12 +76,12 @@ export function CompressionResultCard({
           </p>
         </div>
 
-        <div className="rounded-2xl border border-indigo-100 bg-indigo-50/60 p-4 dark:border-indigo-900/30 dark:bg-indigo-950/30">
-          <div className="flex items-center gap-1 text-[11px] font-semibold text-indigo-700 dark:text-indigo-400">
+        <div className="rounded-2xl border border-red-100 bg-red-50/60 p-4 dark:border-red-900/30 dark:bg-red-950/30">
+          <div className="flex items-center gap-1 text-[11px] font-semibold text-red-700 dark:text-red-400">
             <span>Reduced By</span>
             <ArrowDownRight className="h-3.5 w-3.5" />
           </div>
-          <p className="mt-1 text-base font-extrabold text-indigo-600 dark:text-indigo-300">
+          <p className="mt-1 text-base font-extrabold text-red-600 dark:text-red-300">
             {result.reductionPercentage}%
           </p>
         </div>
@@ -103,7 +103,7 @@ export function CompressionResultCard({
         <button
           type="button"
           onClick={handleDownload}
-          className="inline-flex flex-1 items-center justify-center gap-2 rounded-2xl bg-indigo-600 px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-indigo-500/25 transition-all hover:bg-indigo-700"
+          className="inline-flex flex-1 items-center justify-center gap-2 rounded-2xl bg-red-600 px-6 py-3.5 text-sm font-bold text-white shadow-lg shadow-red-500/25 transition-all hover:bg-red-700"
         >
           <Download className="h-4 w-4" />
           <span>Download Compressed PDF</span>

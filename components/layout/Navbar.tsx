@@ -32,18 +32,18 @@ export function Navbar() {
   const getToolIcon = (name: string) => {
     switch (name) {
       case "FileDown": return <FileDown className="w-4 h-4 text-emerald-600" />;
-      case "Merge": return <Merge className="w-4 h-4 text-indigo-600" />;
+      case "Merge": return <Merge className="w-4 h-4 text-blue-600" />;
       case "Split": return <Split className="w-4 h-4 text-amber-600" />;
       case "PenTool": return <PenTool className="w-4 h-4 text-violet-600" />;
-      case "ScanText": return <ScanText className="w-4 h-4 text-blue-600" />;
+      case "ScanText": return <ScanText className="w-4 h-4 text-cyan-600" />;
       case "Image": return <Image className="w-4 h-4 text-pink-600" />;
-      case "Lock": return <Lock className="w-4 h-4 text-rose-600" />;
-      case "Stamp": return <Stamp className="w-4 h-4 text-purple-600" />;
-      case "RotateCw": return <RotateCw className="w-4 h-4 text-cyan-600" />;
-      case "Layers": return <Layers className="w-4 h-4 text-teal-600" />;
-      case "Crop": return <Crop className="w-4 h-4 text-orange-600" />;
+      case "Lock": return <Lock className="w-4 h-4 text-violet-500" />;
+      case "Stamp": return <Stamp className="w-4 h-4 text-yellow-600" />;
+      case "RotateCw": return <RotateCw className="w-4 h-4 text-orange-600" />;
+      case "Layers": return <Layers className="w-4 h-4 text-lime-600" />;
+      case "Crop": return <Crop className="w-4 h-4 text-orange-500" />;
       case "Wrench": return <Wrench className="w-4 h-4 text-slate-600" />;
-      default: return <FileText className="w-4 h-4 text-primary-600" />;
+      default: return <FileText className="w-4 h-4 text-red-600" />;
     }
   };
 
@@ -75,7 +75,7 @@ export function Navbar() {
           >
             <button
               onClick={() => setIsToolsOpen(!isToolsOpen)}
-              className="flex items-center gap-1.5 rounded-lg px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100 hover:text-indigo-600 dark:text-slate-200 dark:hover:bg-slate-800"
+              className="flex items-center gap-1.5 rounded-lg px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100 hover:text-red-600 dark:text-slate-200 dark:hover:bg-slate-800"
             >
               <span>All PDF Tools</span>
               <ChevronDown className={`h-4 w-4 transition-transform duration-200 ${isToolsOpen ? "rotate-180" : ""}`} />
@@ -91,7 +91,7 @@ export function Navbar() {
                     </span>
                     <Link
                       href="/pdf-converter"
-                      className="text-xs font-medium text-indigo-600 hover:underline dark:text-indigo-400"
+                      className="text-xs font-medium text-red-600 hover:underline dark:text-red-400"
                       onClick={() => setIsToolsOpen(false)}
                     >
                       Converter Hub &rarr;
@@ -108,7 +108,7 @@ export function Navbar() {
                         {getToolIcon(tool.iconName)}
                       </div>
                       <div>
-                        <div className="text-sm font-medium text-slate-900 group-hover:text-indigo-600 dark:text-slate-100 dark:group-hover:text-indigo-400">
+                        <div className="text-sm font-medium text-slate-900 group-hover:text-red-600 dark:text-slate-100 dark:group-hover:text-red-400">
                           {tool.name}
                         </div>
                         <p className="line-clamp-1 text-xs text-slate-500">
@@ -121,7 +121,7 @@ export function Navbar() {
                     <Link
                       href="/#all-tools"
                       onClick={() => setIsToolsOpen(false)}
-                      className="text-xs font-medium text-slate-600 hover:text-indigo-600 dark:text-slate-300"
+                      className="text-xs font-medium text-slate-600 hover:text-red-600 dark:text-slate-300"
                     >
                       View all 18+ tools &rarr;
                     </Link>
@@ -133,31 +133,31 @@ export function Navbar() {
 
           <Link
             href="/pdf-compressor"
-            className="rounded-lg px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100 hover:text-indigo-600 dark:text-slate-200 dark:hover:bg-slate-800"
+            className="rounded-lg px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100 hover:text-red-600 dark:text-slate-200 dark:hover:bg-slate-800"
           >
             Compress
           </Link>
           <Link
             href="/pdf-converter"
-            className="rounded-lg px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100 hover:text-indigo-600 dark:text-slate-200 dark:hover:bg-slate-800"
+            className="rounded-lg px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100 hover:text-red-600 dark:text-slate-200 dark:hover:bg-slate-800"
           >
             Convert
           </Link>
           <Link
             href="/pdf-editor"
-            className="rounded-lg px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100 hover:text-indigo-600 dark:text-slate-200 dark:hover:bg-slate-800"
+            className="rounded-lg px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100 hover:text-red-600 dark:text-slate-200 dark:hover:bg-slate-800"
           >
             Edit
           </Link>
           <Link
             href="/pdf-ocr"
-            className="rounded-lg px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100 hover:text-indigo-600 dark:text-slate-200 dark:hover:bg-slate-800"
+            className="rounded-lg px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100 hover:text-red-600 dark:text-slate-200 dark:hover:bg-slate-800"
           >
             OCR
           </Link>
           <Link
             href="/blog"
-            className="rounded-lg px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100 hover:text-indigo-600 dark:text-slate-200 dark:hover:bg-slate-800"
+            className="rounded-lg px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100 hover:text-red-600 dark:text-slate-200 dark:hover:bg-slate-800"
           >
             Blog
           </Link>
@@ -172,7 +172,7 @@ export function Navbar() {
           <ThemeToggle />
           <Link
             href="/pdf-compressor"
-            className="inline-flex items-center justify-center rounded-xl bg-indigo-600 px-4 py-2 text-sm font-medium text-white shadow-sm transition hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+            className="inline-flex items-center justify-center rounded-xl bg-red-600 px-4 py-2 text-sm font-medium text-white shadow-sm transition hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
           >
             Compress PDF
           </Link>
@@ -249,7 +249,7 @@ export function Navbar() {
             <Link
               href="/pdf-compressor"
               onClick={() => setIsMobileMenuOpen(false)}
-              className="block w-full rounded-xl bg-indigo-600 py-2.5 text-center text-sm font-semibold text-white shadow-sm"
+              className="block w-full rounded-xl bg-red-600 py-2.5 text-center text-sm font-semibold text-white shadow-sm"
             >
               Compress PDF Now
             </Link>

@@ -34,7 +34,7 @@ export function FaqSection({
 
       <div className="mx-auto max-w-4xl">
         <div className="text-center">
-          <div className="inline-flex items-center gap-1.5 rounded-full bg-indigo-50 px-3 py-1 text-xs font-semibold text-indigo-700 dark:bg-indigo-950 dark:text-indigo-300">
+          <div className="inline-flex items-center gap-1.5 rounded-full bg-red-50 px-3 py-1 text-xs font-semibold text-red-700 dark:bg-red-950 dark:text-red-300">
             <HelpCircle className="h-3.5 w-3.5" />
             <span>Got Questions?</span>
           </div>
@@ -57,13 +57,13 @@ export function FaqSection({
                 <button
                   type="button"
                   onClick={() => toggle(idx)}
-                  className="flex w-full items-center justify-between p-5 text-left text-sm font-bold text-slate-900 hover:text-indigo-600 dark:text-slate-100 dark:hover:text-indigo-400"
+                  className="flex w-full items-center justify-between p-5 text-left text-sm font-bold text-slate-900 hover:text-red-600 dark:text-slate-100 dark:hover:text-red-400"
                   aria-expanded={isOpen}
                 >
                   <span>{faq.question}</span>
                   <ChevronDown
                     className={`h-4 w-4 shrink-0 transition-transform duration-200 ${
-                      isOpen ? "rotate-180 text-indigo-600" : "text-slate-400"
+                      isOpen ? "rotate-180 text-red-600" : "text-slate-400"
                     }`}
                   />
                 </button>
