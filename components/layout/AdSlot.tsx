@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
+import { ADSENSE_CLIENT } from "@/lib/seo/metadata";
 
 interface AdSlotProps {
   slotId?: string;
@@ -25,7 +26,7 @@ export function AdSlot({
   label = "Advertisement",
 }: AdSlotProps) {
   const adRef = useRef<HTMLModElement>(null);
-  const client = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
+  const client = ADSENSE_CLIENT;
 
   useEffect(() => {
     if (client && typeof window !== "undefined") {

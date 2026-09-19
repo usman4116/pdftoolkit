@@ -8,6 +8,7 @@ import {
   SITE_TAGLINE,
   SITE_URL,
   GLOBAL_PDF_KEYWORDS,
+  ADSENSE_CLIENT,
   generateSiteNavigationJsonLd,
 } from "@/lib/seo/metadata";
 
@@ -68,7 +69,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const adsenseClient = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
+  const adsenseClient = ADSENSE_CLIENT;
 
   const websiteSchema = {
     "@context": "https://schema.org",

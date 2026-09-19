@@ -4,6 +4,11 @@ export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://pdftoolkit.
 export const SITE_NAME = "PDFToolkit";
 export const SITE_TAGLINE = "Free, Fast & Secure Online PDF Tools";
 
+// Google AdSense publisher ID. Public by design (also appears in /ads.txt and
+// page source). Env var overrides it for staging/preview deployments.
+export const ADSENSE_CLIENT =
+  process.env.NEXT_PUBLIC_ADSENSE_CLIENT || "ca-pub-4249754865999702";
+
 // Broad PDF keyword base appended to every page for organic reach.
 // Covers the standalone "pdf" term plus the most-searched PDF task queries.
 export const GLOBAL_PDF_KEYWORDS = [
