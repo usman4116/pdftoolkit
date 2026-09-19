@@ -2,7 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { SITE_NAME, SITE_TAGLINE, SITE_URL, GLOBAL_PDF_KEYWORDS } from "@/lib/seo/metadata";
+import {
+  SITE_NAME,
+  SITE_TAGLINE,
+  SITE_URL,
+  GLOBAL_PDF_KEYWORDS,
+  generateSiteNavigationJsonLd,
+} from "@/lib/seo/metadata";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -70,6 +76,20 @@ export default function RootLayout({
       "PDFToolkit offers free, private, browser-based PDF tools to compress, convert, edit, merge, split, OCR, and sign PDF documents.",
   };
 
+  // Primary navigation targets — the pool Google draws Sitelinks from.
+  const siteNavigationSchema = generateSiteNavigationJsonLd([
+    { name: "PDF Compressor", path: "/pdf-compressor" },
+    { name: "PDF Editor", path: "/pdf-editor" },
+    { name: "PDF Converter", path: "/pdf-converter" },
+    { name: "Merge PDF", path: "/pdf-merge" },
+    { name: "Split PDF", path: "/pdf-split" },
+    { name: "PDF OCR", path: "/pdf-ocr" },
+    { name: "PDF to Word", path: "/pdf-to-word" },
+    { name: "Sign PDF", path: "/pdf-sign" },
+    { name: "Blog", path: "/blog" },
+    { name: "About", path: "/about" },
+  ]);
+
   return (
     <html lang="en" className="scroll-smooth" suppressHydrationWarning>
       <head>
@@ -95,6 +115,10 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteNavigationSchema) }}
         />
       </head>
       <body className="flex min-h-screen flex-col bg-slate-50 text-slate-900 antialiased selection:bg-indigo-600 selection:text-white dark:bg-slate-950 dark:text-slate-100">

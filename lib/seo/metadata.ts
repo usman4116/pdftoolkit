@@ -129,3 +129,26 @@ export function generateBreadcrumbJsonLd(items: { name: string; item: string }[]
     })),
   };
 }
+
+/**
+ * SiteNavigationElement schema — signals the primary navigation targets to
+ * Google. This is one of the structured-data signals that improves the chance
+ * of Google generating Sitelinks under the brand result. Sitelinks remain
+ * fully algorithmic; this markup helps Google understand the site hierarchy
+ * but does not guarantee them.
+ */
+export function generateSiteNavigationJsonLd(
+  links: { name: string; path: string }[]
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: `${SITE_NAME} Navigation`,
+    itemListElement: links.map((link, idx) => ({
+      "@type": "SiteNavigationElement",
+      position: idx + 1,
+      name: link.name,
+      url: `${SITE_URL}${link.path.startsWith("/") ? link.path : `/${link.path}`}`,
+    })),
+  };
+}
