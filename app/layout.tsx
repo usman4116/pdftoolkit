@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Inter, Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -9,6 +10,21 @@ import {
   GLOBAL_PDF_KEYWORDS,
   generateSiteNavigationJsonLd,
 } from "@/lib/seo/metadata";
+
+// Inter for UI/body, Bricolage Grotesque for display headlines — a deliberate
+// pairing rather than a single default sans, so headings carry personality.
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap",
+});
+
+const bricolage = Bricolage_Grotesque({
+  subsets: ["latin"],
+  variable: "--font-display",
+  weight: ["500", "600", "700", "800"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -91,7 +107,11 @@ export default function RootLayout({
   ]);
 
   return (
-    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
+    <html
+      lang="en"
+      className={`scroll-smooth ${inter.variable} ${bricolage.variable}`}
+      suppressHydrationWarning
+    >
       <head>
         {/* No-flash theme boot: applies the saved (or OS-preferred) theme
             before first paint so there is no flash of the wrong theme. */}
