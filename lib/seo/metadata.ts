@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://www.theaethersync.com";
+export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://pdftoolkit.theaethersync.com";
 export const SITE_NAME = "PDFToolkit";
 export const SITE_TAGLINE = "Free, Fast & Secure Online PDF Tools";
 
